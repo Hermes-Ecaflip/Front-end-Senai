@@ -5,7 +5,6 @@ base , altura , area : real
 
 
 Inicio
-<<<<<<< HEAD
 escreval("digite a base do retangulo")
 leia(base)
 
@@ -16,13 +15,6 @@ area <- base * altura /2
 escreval("A area do retângulo é", area, "²")
 
 
-=======
-escreval("digite um numero que eu direi seu antecessor")
-leia(base)
-
-area <- base -1
-escreval("seu antecessor é", area)
->>>>>>> 12ff30b4ffdac8abad687a5c97c0562cacaebab2
 
 
 
