@@ -14,9 +14,17 @@ Sinta-se à vontade para explorar o código fonte, experimentar as funcionalidad
 
 ## Tecnologias Utilizadas
 
-- HTML
-- CSS
-- JavaScript
+<a href="https://github.com/Hermes-Ecaflip">
+    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+</a>
+
+<a href="https://github.com/Hermes-Ecaflip">
+    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</a>
+
+<a href="https://github.com/Hermes-Ecaflip">
+    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%#8B7765" alt="JavaScript">
+</a>
 
 ## Licença
 
