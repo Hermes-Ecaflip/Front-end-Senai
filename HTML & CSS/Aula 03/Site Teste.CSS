@@ -1,0 +1,54 @@
+*{
+ margin: 0%;
+ padding: 0%
+}
+
+body{
+background-color:black
+}
+
+#cabecalho{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 30px 0px;
+}
+
+#cabecalho img{
+    /* altura da imagem referencia altura do cabecalho */
+    height: 50px;
+    margin-left: 40px;
+}
+
+a{
+    color: rgb(255, 255, 255);    
+    text-decoration: none;
+    margin: 20px;                                      
+}
+
+#banner{
+    width: 80% auto;
+    height: 300px;
+    margin: 0px auto;
+    border-radius: 10px;
+    /* background image = puxa a imagem */
+    background-image: url(https://i.pinimg.com/originals/00/d6/a4/00d6a44aac5ae4e947909ab9db888f32.gif);
+    /* background size = controla as dimensões da imagem */
+    background-size: cover ;
+    /* background repeat = controla as repetições */
+    background-repeat: no-repeat;
+    /* background position = controla a posição faco do backgrond */
+    background-position: center;   
+}
+
+#conteudo{
+    width: 80%;
+    /* margin / padding */
+    /* 1 valor = todos os lados */
+    /* 2 valores = eixo y (cima e baixo), eixo x (direito e esquerda)*/
+    /* 4 valores = sentido horário (cima, direita, baixo, esquerda) */
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
