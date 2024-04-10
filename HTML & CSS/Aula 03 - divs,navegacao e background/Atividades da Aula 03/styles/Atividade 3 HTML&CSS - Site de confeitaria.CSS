@@ -1,0 +1,74 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #f8d9e3;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header img{
+    width: 150px ;
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: rgb(112, 36, 81);
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(110, 36, 80);
+  }
+  
+  /* Estilos para os produtos */
+  #products {
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .product {
+    display: inline-block;
+    width: 300px;
+    margin: 0 20px;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    margin-top: 10px;
+    color: rgb(110, 36, 80);
+  }
+  
+  /* Estilos para a seção "Sobre Nós" */
+  #about {
+    background-color: rgb(248, 217, 227);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #about h2 {
+    color: rgb(110, 36, 80);
+  }
+  
+  
