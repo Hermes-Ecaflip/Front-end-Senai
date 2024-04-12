@@ -1,74 +1,144 @@
 /* Reset de estilos */
+/* Keyframes para animação */
+@keyframes hoverBorder {
+  0% {
+    border-width: 2px;
+  }
+  100% {
+    border-width: 5px;
+  }
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Estilos para o cabeçalho */
-  header {
-    background-color: #f8d9e3;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header img{
-    width: 150px ;
-    padding: 0%;
-    margin: 0%;
-  }
-  
-  header h1 {
-    font-size: 2em;
-    color: rgb(112, 36, 81);
-  }
-  
-  nav ul {
-    list-style-type: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: rgb(110, 36, 80);
-  }
-  
-  /* Estilos para os produtos */
-  #products {
-    margin: 20px auto;
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .product {
-    display: inline-block;
-    width: 300px;
-    margin: 0 20px;
-  }
-  
-  .product img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .product h3 {
-    margin-top: 10px;
-    color: rgb(110, 36, 80);
-  }
-  
-  /* Estilos para a seção "Sobre Nós" */
-  #about {
-    background-color: rgb(248, 217, 227);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  #about h2 {
-    color: rgb(110, 36, 80);
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background-color: #f8d9e3;
+  padding: 20px;
+  text-align: center;
+}
+
+header img{
+  width: 150px;
+  padding: 0%;
+  margin: 0%;
+}
+
+header h1 {
+  font-size: 2em;
+  color: rgb(112, 36, 81);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(110, 36, 80);
+}
+
+/* Adicionei uma cor de destaque para o link "Home" */
+nav ul li:first-child a {
+  color: #f63f7c;
+}
+
+/* Estilos para os produtos */
+#products {
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.product {
+  display: inline-block;
+  width: 300px;
+  margin: 0 20px;
+  border: 2px solid transparent; /* Adiciona uma borda transparente ao produto */
+  transition: border-color 0.3s ease-in-out; /* Adiciona uma transição suave para a mudança de cor da borda */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: inherit; /* Faz com que os links tenham a mesma cor do texto padrão */
+}
+
+.product:hover {
+  border-color: #f63f7c; /* Altera a cor da borda quando o mouse passa sobre o produto */
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  color: rgb(110, 36, 80);
+}
+
+.product p{
+  color: rgb(129, 36, 80); /* Cor específica para os parágrafos dentro dos produtos */
+}
+
+/* Estilos para a seção "Sobre Nós" */
+#about {
+  background-color: rgb(248, 217, 227);
+  padding: 20px;
+  text-align: center;
+}
+
+#about h2 {
+  color: rgb(110, 36, 80);
+}
+
+/* Se necessário adicionar estilos para o footer */
+footer {
+  background-color: #f8d9e3;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h2 {
+  color: rgb(112, 36, 81);
+}
+
+#contact-form {
+  margin-top: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-form button {
+  background-color: #f63f7c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-info {
+  margin-top: 20px;
+}
+
+.footer-info p {
+  margin-bottom: 5px;
+}
