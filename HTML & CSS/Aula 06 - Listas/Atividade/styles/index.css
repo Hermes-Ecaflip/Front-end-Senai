@@ -19,11 +19,11 @@ header {
 
 header img {
     width: 80px;
-    margin-left: 70px;
+    margin-left: 5%;
 }
 
 header h1 {
-    margin-left: 700px;
+    margin-left: 35%;
     margin-top: 20px;
     color: aliceblue;
     text-align: center;
@@ -42,7 +42,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 2%;
 }
 
 nav ul li a {
@@ -66,6 +66,10 @@ main{
 main img{
     width: 60%;
     border-radius: 20px;
+}
+
+.cafe {
+    margin-bottom: 1%;
 }
 
 main p{
