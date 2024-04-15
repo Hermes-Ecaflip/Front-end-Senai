@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do contêiner do formulário */
+.form-container {
+    width: 90%; 
+    max-width: 500px; 
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos títulos dentro das divs */
+div h2 {
+    text-align: center;
+}
+
+/* Estilo do formulário usando grid layout */
+form {
+    display: grid;
+    gap: 10px;
+}
+
+/* Estilo dos rótulos dos campos do formulário */
+label {
+    font-weight: bold;
+}
+
+/* Estilo dos campos de input do formulário */
+input {
+    padding: 8px; 
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Estilo do botão de envio do formulário */
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+/* Estilo hover do botão */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do título h3 no centro da página */
+h3 {
+    text-align: center;
+}
