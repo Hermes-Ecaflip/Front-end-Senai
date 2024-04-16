@@ -1,0 +1,101 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+table:first-of-type th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table:nth-of-type(2) th {
+    background-color: #3498db;
+    color: white;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+td {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+
+td:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin: 20px 0;
+}
+
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+body {
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+thead {
+    position: sticky;
+    top: -1px;
+}
+
+th-empty {
+    background-color: transparent;
+    border: none;
+}
+
+#abrescroll {
+    width: 2vw; 
+    height: 100vh; 
+}
+
+@keyframes efeito {
+0% {background-color: 1px solid black;
+}
+25% {background-color: 1px solid rgb(205, 21, 8);
+}
+
+50% {background-color: 1px solid rgb(240, 78, 66);
+}
+
+75% {background-color: 1px solid rgb(205, 21, 8);
+}
+
+100%{background-color: 1px solid rgb(0, 0, 0);
+}
+}
