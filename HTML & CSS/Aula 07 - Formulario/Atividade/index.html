@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Cadastro de Currículo</h1>
-        <form>
+        <form id="form">
             <h2>Dados pessoais</h2>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome">
@@ -17,62 +17,90 @@
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email">
 
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento">
+
             <h2>Dados de Endereço</h2>
             <label for="endereco">Endereço:</label>
             <input type="text" id="endereco" name="endereco">
 
+            <label for="estado">Selecione o estado:</label>
+            <select id="estado" name="estado">
+                <option value="">---</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
             <fieldset>
-                <legend>Formaçao academica</legend>
+                <legend>Formação acadêmica</legend>
                 <label for="ensinoBasico">Ensino Básico Completo</label>
                 <input type="radio" id="ensinoBasico" name="escolaridade" value="Ensino Básico">
-
-                <hr>
 
                 <label for="ensinoBasicoIn">Ensino Básico Incompleto</label>
                 <input type="radio" id="ensinoBasicoIn" name="escolaridade" value="Ensino Básico In">
 
-                <hr>
-
                 <label for="ensinoMedio">Ensino Médio Completo</label>
                 <input type="radio" id="ensinoMedio" name="escolaridade" value="Ensino Médio">
-
-                <hr>
 
                 <label for="ensinoMedioIn">Ensino Médio Incompleto</label>
                 <input type="radio" id="ensinoMedioIn" name="escolaridade" value="Ensino Médio In">
 
-                <hr>
-
                 <label for="ensinoSuperior">Ensino Superior Completo</label>
                 <input type="radio" id="ensinoSuperior" name="escolaridade" value="Ensino Superior">
-
-                <hr>
 
                 <label for="ensinoSuperiorIn">Ensino Superior Incompleto</label>
                 <input type="radio" id="ensinoSuperiorIn" name="escolaridade" value="Ensino Superior In">
             </fieldset>
 
             <h2>Objetivo</h2>
-            <form>
-             <label for="objetivo">Informe seu objetivo:</label>
-             <textarea id="objetivo" name="objetivo" placeholder="Digite seu objetivo aqui..."></textarea>
+            <label for="objetivo">Informe seu objetivo:</label>
+            <textarea id="objetivo" name="objetivo" placeholder="Digite seu objetivo aqui..."></textarea>
 
             <h2>Experiência Profissional</h2>
             <label for="experiencia">Experiência Profissional:</label>
-            <textarea id="experiência" name="experiencia" placeholder="Digite sua experiencia aqui..."></textarea>
+            <textarea id="experiencia" name="experiencia" placeholder="Digite sua experiência aqui..."></textarea>
 
+            <h2>Cursos Complementares</h2>  
             <label for="cursos">Cursos Complementares:</label>
+            <textarea id="cursos" name="cursos" placeholder="Digite os cursos complementares aqui..."></textarea>
+
+            <label for="arquivo" class="upload-btn">
+                <img src="Img/upload.png" alt="Ícone de Upload" class="upload-icon">
+                Escolher arquivo
+            </label>
+            <input type="file" id="arquivo" name="arquivo" accept="image/*, .pdf, .doc, .docx">
+            
             <br>
-            <textarea id="cursos" name="cursos" rows="4" cols="50"></textarea>
-            <br>
-            <label for="imagem">Imagem:</label>
-            <br>
-            <input type="file" id="imagem" name="imagem">
-            <br>
-    
 
             <button type="submit">Enviar</button>
         </form>
+        <div id="feedback"></div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

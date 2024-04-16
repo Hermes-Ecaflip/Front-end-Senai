@@ -5,55 +5,98 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-form {
-    background-color: #f9f9f9;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    text-align: center;
-}
-
-h2 {
-    margin-top: 20px;
+h1, h2 {
+    color: #333;
 }
 
 label {
     display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #45a049;
+}
+
+.upload-icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Adicionando estilo para o feedback de erro */
+#feedback {
+    color: red;
     margin-top: 10px;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* Estilizando os campos de seleção */
+select {
+    appearance: none; /* Remove o estilo padrão do sistema */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="#ccc"/></svg>'); /* Adiciona uma seta ao final do campo */
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #1E90FF;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+/* Estilizando os campos de data */
+input[type="date"] {
+    appearance: none; /* Remove o estilo padrão do sistema */
 }
 
-button:hover {
-    background-color: #0056b3;
-}
