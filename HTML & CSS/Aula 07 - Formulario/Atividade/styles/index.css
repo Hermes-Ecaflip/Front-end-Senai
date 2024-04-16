@@ -89,7 +89,7 @@ button[type="submit"]:hover {
 
 /* Estilizando os campos de seleção */
 select {
-    appearance: none; /* Remove o estilo padrão do sistema */
+    appearance: none; 
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path d="M0 0l5 6 5-6z" fill="#ccc"/></svg>'); /* Adiciona uma seta ao final do campo */
     background-repeat: no-repeat;
     background-position: right 10px top 50%;
@@ -97,6 +97,9 @@ select {
 
 /* Estilizando os campos de data */
 input[type="date"] {
-    appearance: none; /* Remove o estilo padrão do sistema */
+    appearance: none; 
 }
 
+textarea{
+    resize: none;
+}
