@@ -1,0 +1,103 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#topo-bike-notícias {
+    position: relative;
+    z-index: 1;
+}
+
+#topo-bike-notícias img {
+    width: 100%;
+    height: 400px;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 200px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section{
+    width: calc(30.33% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section img {
+    width: 20%;
+    margin-top: 10%;
+}
+
+section h3, section p {
+    margin-top: 10px;
+}
+
+section button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 2%;
+}
+
+section button:hover {
+    background-color: #0056b3; 
+}
+
+#agenda {
+    background-color: #F0F0F0;
+}
+
+#agenda h1, #agenda h3{
+    text-align: center;
+    margin-top: 2%;
+}
+
+#agenda select {
+    display: inline;
+    margin-left: 250px;
+    margin-bottom: 2%;
+    width: calc(33.33% - 10px);
+    height: 30px;
+    border: none;
+       
+}
