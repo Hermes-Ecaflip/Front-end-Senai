@@ -1,29 +1,25 @@
-/* Reset de margin e padding */
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
-    position: relative;
+    width: 100%;
+}
+
+#banner {
+    width: 100%;
+    height: 600px;
+    background: url(../Img/banner.png) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 #logo {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-#topo-bike-notícias {
-    position: relative;
-    z-index: 1;
-}
-
-#topo-bike-notícias img {
-    width: 100%;
-    height: 400px;
+    width: 200px;
+    height: 200px;
+    background: url(../Img/logo_vou_de_bike.png) center/cover no-repeat;
 }
 
 nav {
@@ -33,15 +29,15 @@ nav {
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin: 0.5% 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: calc(12.11% - 10px);
+    margin-right: 12.11%;
 }
 
 nav ul li a {
@@ -59,33 +55,34 @@ nav ul li:hover a {
     justify-content: space-between;
 }
 
-section {
-    width: calc(30.33% - 10px);
+#container section {
+    width: 30.33%;
     margin-bottom: 20px;
     text-align: center;
 }
 
-section img {
-    width: 20%;
+#container section img {
+    width: 30.08%;
     margin-top: 10%;
+    border-radius: 100%;
 }
 
-section h3, section p {
+#container section h3, #container section p {
     margin-top: 10px;
 }
 
-section button {
-    background-color: #007bff;
-    color: #fff;
+#container section button {
+    border: 1px solid black;
+    color: #000000;
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 2%;
+    margin-top: 3%;
+    background-color: transparent;
 }
 
-section button:hover {
-    background-color: #0056b3;
+#container section button:hover {
+    background-color: #7b7c7e;
 }
 
 #agenda {
@@ -101,6 +98,7 @@ section button:hover {
     display: inline-block;
     margin-left: 210px;
     margin-bottom: 2%;
+    margin-top: 2%;
     width: calc(33.33% - 10px);
     height: 30px;
     border: none;
