@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtMuseum</title>
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="styles/mobile.css">
+</head>
+<body>
+    <header>
+        <h1>ArtMuseum</h1>
+        <nav>
+            <button id="btnmobile" onclick="btnMobillee()" type="button">
+                <img src="img/menuIcon.svg" alt="menuIcon">
+            </button>
+            <ul id="menumobile">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <ul id="menudesktop">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#products">Produtos</a></li>
+                 <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h3>Destaque da Semana</h3>
+        <!-- Imagem e texto -->
+        <div id="elizabeth">
+            <h2>Elizabeth</h2>
+            <img src="img/elizabeth.jpg" alt="elizabeth"> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quisquam, id sapiente atque quidem cum tenetur itaque et animi, voluptatum, accusantium odit. Consequatur sint error provident animi dolores velit expedita.</p>
+            <button>Ver sobre</button>
+        </div>
+        <!-- Texto descritivo -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, eius quidem tenetur nostrum, qui non architecto praesentium reiciendis earum temporibus voluptatum perspiciatis et tempore aperiam libero. Adipisci dolorem delectus praesentium.</p>
+        <!-- galeria -->
+        <h3>Artes</h3>
+        <ul>
+            <li>
+                <h2>Titulo da arte</h2>
+                <img src="img/arte1.jpg" alt="Artwork 1">
+                <p>Descrição da arte</p>
+                <button>Ver sobre</button>
+            </li>
+            <li>
+                <h2>Titulo da arte</h2>
+                <img src="img/arte2.jpg" alt="Artwork 2">
+                <p>Descrição da arte</p>
+                <button>Ver sobre</button>
+            </li>
+            <li>
+                <h2>Titulo da arte</h2>
+                <img src="img/arte3.jpg" alt="Artwork 3">
+                <p>Descrição da arte</p>
+                <button>Ver sobre</button>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <h4>ArtMuseum © 2023</h4>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
