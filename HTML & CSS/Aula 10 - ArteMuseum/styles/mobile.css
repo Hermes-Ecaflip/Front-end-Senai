@@ -15,6 +15,7 @@
 body {
     background-color: #f8f8f8;
     color: var(--cor-terciaria);
+    width: 100%;
 }
 
 header {
@@ -38,22 +39,22 @@ header h1 {
     display: none;
 }
 
-nav {
+ul {
     display: flex;
     justify-content: center;
 }
 
-nav ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
+ul li {
     display: inline;
     margin-right: 20px;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: var(--cor-secundaria);
 }
@@ -147,8 +148,39 @@ footer {
 }
 
 #btnmobile {
-    display: flex;
-    justify-content: left;
-    background-color: transparent;
+    display: none;
+    background: none;
+    border: none;
     cursor: pointer;
+}
+
+#menumobile {
+    display: none;
+    list-style-type: none;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#menumobile li {
+    padding: 10px 0;
+}
+
+#menumobile li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#menumobile li a:hover {
+    color: #666;
+}
+
+@media screen and (max-width: 860px) {
+    #btnmobile {
+        display: block;
+    }
+
 }
