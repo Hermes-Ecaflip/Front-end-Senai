@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --cor-primaria: #ba2d2d;
+    --cor-secundaria: #f2871b85;
+    --cor-terciaria: #f2511b;
+    --cor-quartenaria: #302727;
+    --cor-quitenaria: #c7c730;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-quartenaria);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+header img {
+    width: 60px;
+    margin-left: 5%;
+}
+
+nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 10px;
+    gap: 30px;
+}
+
+header nav li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav li{
+    cursor: pointer;
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header nav li:hover {
+    background-color: #9e2424;
+}
+
+header nav li:active {
+   background-color: rgba(255, 255, 255, 0.685);
+   a {
+    color: black;
+   }
+}
+
+
+header button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 3%;
+    font-weight: lighter;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header button:hover {
+    background-color: white;
+    color: var(--cor-primaria);
+}
+
+header button:active {
+    transform: translateY(2px);
+}
+
+main {
+    margin-top: 1%;
+}
+
+#banner {
+    background-image: url(../img/banner.jpg);
+    height: 746px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+#textbanner {
+    background-color: var(--cor-secundaria);
+    width: 35%;
+    
+}
+
+#textbanner h1 {
+    padding: 30px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 2%;
+}
+
+#textbanner p {
+    text-align: left;
+    font-weight: bolder;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+
+#textbanner button {
+    background-color: var(--cor-quartenaria);
+    color: white;
+    border: 2px solid #f2861b;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    margin-right: 3%;
+    font-weight: lighter;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 20px;
+    margin-left: 3%;
+    margin-bottom: 7%;
+}
+
+#textbanner button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-quartenaria);
+}
+
+#textbanner button:active {
+    transform: translateY();
+}
+
+#pagamentos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 7%;
+}
+
+#pagamentos h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+#pagamentos h3 {
+    padding-top: 25px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#pagamentos button {
+    background-color: transparent;
+    border: 1px solid var(--cor-quartenaria);
+    padding: 5%;
+    margin: 0 10px;
+    cursor: pointer;
+    width: calc(25.33% - 10px);
+    margin-left: 5%;
+}
+
+#pagamentos button img {
+    height: 90px;
+    vertical-align: middle;
+}
+
+#pagamentos button:hover {
+    background-color: #e0e0e0;
+}
+
+#pagamentos button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #333;
+}
+
+#servicos {
+    background-color: var(--cor-quartenaria);
+    color: white;
+    height: 400px;
+    display: flex;
+}
+
+#servicos img {
+    max-height: 90%;
+    width: 100%;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+#textservice h1{
+    font-size: xx-large;
+    padding-top: 2.5%;
+    padding-left: 2.1%;
+}
+
+#textservice h4 {
+    width: 70%;
+    padding-top: 1%;
+    padding-left: 1.3%;
+}
+
+footer{
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
