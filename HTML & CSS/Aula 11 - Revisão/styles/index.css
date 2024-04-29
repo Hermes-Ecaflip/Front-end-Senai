@@ -214,6 +214,30 @@ main {
     padding-left: 1.3%;
 }
 
+#textcliente {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#cliente {
+    display: flex;
+    justify-content: center; /* Para centralizar as imagens horizontalmente */
+}
+#cliente img {
+    width: 400px; /* Definindo um tamanho quadrado */
+    height: 400px; /* Definindo um tamanho quadrado */
+    margin: 0 10px; /* Espaçamento entre as imagens */
+    border-radius: 10px; /* Border-radius para arredondar as bordas */
+    margin-bottom: 20px;
+}
+
+#cliente img:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita da última imagem */
+}
+
 footer{
     background-color: var(--cor-primaria);
     color: white;
