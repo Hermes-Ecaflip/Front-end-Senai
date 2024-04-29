@@ -12,6 +12,10 @@
     --cor-quitenaria: #c7c730;
 }
 
+body {
+    background-color: #EEEEEE;
+}
+
 header {
     background-color: var(--cor-primaria);
     color: var(--cor-quartenaria);
@@ -91,6 +95,9 @@ header button:active {
 
 main {
     margin-top: 1%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #banner {
@@ -202,7 +209,7 @@ main {
     border-radius: 10px;
 }
 
-#textservice h1{
+#textservice h1 {
     font-size: xx-large;
     padding-top: 2.5%;
     padding-left: 2.1%;
@@ -215,6 +222,7 @@ main {
 }
 
 #textcliente {
+    width: 100%;
     text-align: center;
     font-size: larger;
     font-weight: bolder;
@@ -222,23 +230,80 @@ main {
     margin-bottom: 20px;
 }
 
-#cliente {
+#agrupamentocartao {    
+    width: 100%;
     display: flex;
-    justify-content: center; /* Para centralizar as imagens horizontalmente */
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0px;
 }
-#cliente img {
-    width: 400px; /* Definindo um tamanho quadrado */
-    height: 400px; /* Definindo um tamanho quadrado */
-    margin: 0 10px; /* Espaçamento entre as imagens */
-    border-radius: 10px; /* Border-radius para arredondar as bordas */
+
+.cartao {
+   width: 400px;
+   height: 400px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 5px;
+}
+
+#cartaoum {
+    background-image: url(../img/cartaoUm.jpg);
+}
+
+#cartaodois {
+    background-image: url(../img/cartaoDois.jpg);
+}
+
+#cartaotres {
+    background-image: url(../img/cartaoTres.jpg);
+}
+
+#horario {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px 10px rgb(124, 124, 124);
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+table {
+    width: 100%;
+    padding: 20px;
+    border-collapse: collapse;
+    
+}
+
+h2 {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#cliente img:last-child {
-    margin-right: 0; /* Remove o espaçamento à direita da última imagem */
+th {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
 }
 
-footer{
+td { 
+    border: 1px solid gray;
+}
+
+th:empty {
+    background-color: transparent;
+    border: 10px;
+}
+
+
+footer {
     background-color: var(--cor-primaria);
     color: white;
     padding: 15px;
