@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYZE OVER</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Navegação do site -->
+        <nav>
+            <!-- logo -->
+            <a href="index.html" id="logo">
+                <img src="img/LOGO OFICIAL.png" alt="Logo da Empresa">
+            </a>
+            <!-- Botão para abrir a barra lateral -->
+            <button id="sidebarToggle">☰</button>
+        </nav>
+    </header>
+    <!-- Barra lateral -->
+    <aside id="sidebar" class="sidebar-closed">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Produtos">Produtos</a></li>
+            <li><a href="#Contatos">Contatos</a></li>
+        </ul>
+    </aside>
+            <!-- Botão para abrir a barra lateral -->
+        </nav>
+    </header>
+    <!-- Área de login -->
+    <main>
+        <form>
+            <!-- email -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- senha -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

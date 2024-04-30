@@ -1,0 +1,122 @@
+/* Reset básico para remover margens e paddings padrões */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de cores */
+:root {
+    --corprimaria: #00FD00;
+    --corsecundaria: #181818; /* Preto */
+    --corfundo: #8d8d8d; /* Cinza claro */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: var(--corsecundaria);
+    padding: 1rem;
+}
+
+/* Estilo da navegação */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 150px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+}
+
+ul li {
+    margin: 0 1rem;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+/* Efeito hover nos links da navegação */
+ul li a:hover {
+    color: var(--corprimaria);
+    background-color: var(--corfundo);
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+}
+
+/* Estilo da área de login */
+main {
+    background-image: url('../img/Cadastro.jpg');
+    background-size: cover;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+/* Efeito focus nos inputs */
+form input:focus {
+    border-color: var(--corprimaria);
+    box-shadow: 0 0 8px 0 var(--corprimaria);
+}
+
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--corprimaria);
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* Efeito active nos botões */
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Animação com keyframes para o logo */
+@keyframes girarLogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#logo img:hover {
+    animation: girarLogo 2s linear infinite;
+}
