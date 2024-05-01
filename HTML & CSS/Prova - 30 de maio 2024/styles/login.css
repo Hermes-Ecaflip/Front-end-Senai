@@ -20,6 +20,12 @@ header {
     justify-content: space-between; /* Adicionado para alinhar o botão à direita */
 }
 
+header h1{
+    text-align: center;
+    color: #00FD00; 
+    margin-left: 25%;
+}
+
 /* Estilo da navegação */
 nav {
     display: flex;
@@ -123,40 +129,3 @@ form button:active {
     animation: girarLogo 2s linear infinite;
 }
 
-/* Estilo do botão de toggle da barra lateral */
-#sidebarToggle {
-    background-color: var(--corprimaria);
-    color: var(--corsecundaria);
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 5px;
-    position: fixed; /* Fixado na tela */
-    top: 10px; /* Posição no topo */
-    right: 10px; /* Posição à direita */
-    z-index: 3; /* Garante que o botão fique acima da barra lateral */
-}
-
-/* Efeito hover no botão de toggle da barra lateral */
-#sidebarToggle:hover {
-    background-color: var(--corfundo);
-    color: var(--corprimaria);
-}
-
-/* Estilos para a barra lateral */
-#sidebar {
-    position: fixed;
-    top: 0;
-    right: -250px; /* Esconde a barra lateral para a direita */
-    width: 250px;
-    height: 100%;
-    background-color: var(--corsecundaria);
-    transition: right 0.3s; /* Animação suave para a transição */
-    z-index: 2; /* Garante que a barra lateral fique acima do conteúdo principal */
-}
-
-/* Estilos para a barra lateral quando estiver aberta */
-.sidebar-open {
-    right: 0; /* Mostra a barra lateral */
-}
