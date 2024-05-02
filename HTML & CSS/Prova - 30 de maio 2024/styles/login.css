@@ -1,70 +1,26 @@
-/* Reset básico para remover margens e paddings padrões */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Variáveis de cores */
 :root {
     --corprimaria: #00FD00;
-    --corsecundaria: #181818; /* Preto */
-    --corfundo: #8d8d8d; /* Cinza claro */
+    --corsecundaria: #181818; 
+    --corfundo: #8d8d8d;
 }
 
-/* Estilo do cabeçalho */
-header {
-    background-color: var(--corsecundaria);
-    padding: 1rem;
+body {
     display: flex;
-    justify-content: space-between; /* Adicionado para alinhar o botão à direita */
+    min-height: 100vh;
+    background-color: #e3e9f7;
 }
 
-header h1{
-    text-align: center;
-    color: #00FD00; 
-    margin-left: 25%;
-}
-
-/* Estilo da navegação */
-nav {
-    display: flex;
-    align-items: center;
-}
-
-#logo img {
-    max-width: 150px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-left: auto; /* Alterado para alinhar os itens de navegação à direita */
-}
-
-ul li {
-    margin: 0 1rem;
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bolder;
-    font-size: large;
-}
-
-/* Efeito hover nos links da navegação */
-ul li a:hover {
-    color: var(--corprimaria);
-    background-color: var(--corfundo);
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 20px;
-}
-
-/* Estilo da área de login */
 main {
+    width: 100%;
     background-image: url('../img/Background.jpg');
     background-size: cover;
     padding: 2rem;
@@ -93,7 +49,6 @@ form input {
     border-radius: 20px;
 }
 
-/* Efeito focus nos inputs */
 form input:focus {
     border-color: var(--corprimaria);
     box-shadow: 0 0 8px 0 var(--corprimaria);
@@ -110,22 +65,182 @@ form button {
     border-radius: 20px;
 }
 
-/* Efeito active nos botões */
 form button:active {
     transform: scale(0.98);
 }
 
-/* Animação com keyframes para o logo */
-@keyframes girarLogo {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.item-description button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    color: var(--texto-primario);
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .item-description button:hover {
+    background-color: #388E3C; /* Um tom mais escuro de verde */
+    color: white;
+  }
+  
+  /* Ícones para os botões */
+  .btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn-login i {
+    margin-right: 8px;
+  }
+
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+    z-index: 2;
 }
 
-#logo img:hover {
-    animation: girarLogo 2s linear infinite;
+#sidebar_content {
+    padding: 12px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+#user_infos span:last-child {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item.active {
+    background-color: #4f46e5;
+}
+
+.side-item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #e3e9f7;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+}
+
+.side-item.active a {
+    color: #e3e9f7;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    border-top: 1px solid #e3e9f7;
+    padding: 12px;
+}
+
+#logout_btn {
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open_btn {
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #4f46e5;
+    color: #e3e9f7;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open_btn_icon {
+    transform: rotate(180deg);
+}
+
+.item-description {
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .6s;
+    height: 0px;
+}
+
+#sidebar.open-sidebar {
+    min-width: 15%;
+}
+
+#sidebar.open-sidebar .item-description {
+    width: 150px;
+    height: auto;
+}
+
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
 }
 
