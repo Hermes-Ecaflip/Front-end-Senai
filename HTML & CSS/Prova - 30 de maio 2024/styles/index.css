@@ -1,107 +1,58 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Variáveis de cores */
 :root {
     --corprimaria: #00FD00;
-    --corsecundaria: #181818; /* Preto */
-    --corfundo: #8d8d8d; /* Cinza claro */
+    --corsecundaria: #181818; 
+    --corfundo: #8d8d8d;
 }
 
-/* Estilo do cabeçalho */
-header {
-    background-color: var(--corsecundaria);
-    padding: 1rem;
-}
-
-/* Estilo da navegação */
-nav {
+body {
     display: flex;
-    align-items: center;
+    min-height: 100vh;
+    background-color: #e3e9f7;
 }
 
-#logo img {
-    max-width: 150px;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-left: 35%;
-}
-
-ul li {
-    margin: 0 1rem;
-}
-
-ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bolder;
-    font-size: large;
-}
-
-/* Efeito hover nos links da navegação */
-ul li a:hover {
-    color: var(--corprimaria);
-    background-color: var(--corfundo);
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 20px;
-}
-
-/* Estilo da barra lateral */
-#sidebar {
-    background-color: var(--corsecundaria);
-    position: fixed;
-    top: 0;
-    left: -250px; /* Escondido inicialmente */
-    width: 250px;
-    height: 100%;
-    padding: 1rem;
-    transition: left 0.3s;
-
-}
-
-#sidebar ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-#sidebar ul li a:hover {
-    background-color: var(--corfundo);
-}
-
-/* Botão para abrir a barra lateral */
-#sidebarToggle {
-    position: fixed;
-    left: 10px;
-    top: 10px;
-    background-color: var(--corprimaria);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
-}
-
-/* Estilo do conteúdo principal */
 main {
-    padding: 1rem;
-    margin-left: 250px; /* Espaço para a barra lateral */
+    width: 100%;
+    background-color: #e3e9f7;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    margin-top: 1%;
 }
+
+
+#banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+}
+
+.banner1 {
+    background-image: url(../img/banner1.jpg);
+    background-size: cover;
+}
+
+.banner2 {
+    background-image: url(../img/banner\ 2.jpg);
+    background-size: cover;  
+    display: flex;
+    align-items: start;
+}
+
+
+#textbanner2 h1 {
+    margin-left: 55%;
+    margin-top: 17%;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}  
+
+.banner3 {
+    background-image: url(../img/banner\ 3.jpg);
+    background-size: cover;
+}
+
