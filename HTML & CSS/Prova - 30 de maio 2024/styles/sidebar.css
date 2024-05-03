@@ -18,12 +18,14 @@
 }
 
 main {
-background-color: var(--hover-primario);
+background-color: transparent;
 }
 
 
 body {
-    background-color: var(--hover-primario);
+    display: flex;
+    min-height: 100vh;
+    background-color: transparent;
 }
 
 .item-description button {
@@ -60,7 +62,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    border-radius: 0px 18px 18px 0px;
     position: relative;
     transition: all .5s;
     min-width: 82px;
