@@ -17,6 +17,15 @@
     --hover-secundario: #333333; /* Cinza escuro */
 }
 
+main {
+background-color: var(--hover-primario);
+}
+
+
+body {
+    background-color: var(--hover-primario);
+}
+
 .item-description button {
     padding: 10px 20px;
     margin: 5px;
