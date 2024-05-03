@@ -3,28 +3,28 @@
     max-width: 100%;
     margin: auto;
     overflow: hidden;
-  }
-  
-  .carrossel-slides .carrossel-slide {
+}
+
+.carrossel-slides .carrossel-slide {
     display: none;
     width: 100%;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     transform: scale(0.5); /* Começa com zoom out */
     opacity: 0;
-  }
-  
-  .carrossel-slides .carrossel-slide.active {
+}
+
+.carrossel-slides .carrossel-slide.active {
     display: block;
     transform: scale(1); /* Zoom in para tamanho normal */
     opacity: 1;
-  }
-  
-  .carrossel-slides img {
+}
+
+.carrossel-slides img {
     width: 100%;
     height: auto;
-  }
-  
-  .carrossel-prev, .carrossel-next {
+}
+
+.carrossel-prev, .carrossel-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -36,75 +36,60 @@
     font-size: 18px;
     transition: 0.6s ease;
     user-select: none;
-  }
-  
-  .carrossel-prev {
+}
+
+.carrossel-prev {
     left: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  .carrossel-next {
+}
+
+.carrossel-next {
     right: 0;
     border-radius: 0 3px 3px 0;
-  }
-  
-  .carrossel-prev:hover, .carrossel-next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  .carrossel-slides .carrossel-slide {
-    display: none;
-    width: 100%;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    transform: scale(0.5); /* Começa com zoom out */
-    opacity: 0;
-  }
-  
-  .carrossel-slides .carrossel-slide.active {
-    display: block;
-    transform: scale(1); /* Zoom in para tamanho normal */
-    opacity: 1;
-  }
+}
 
-  .produtos h2 {
+.carrossel-prev:hover, .carrossel-next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.produtos h2 {
     text-align: center;
     margin-bottom: 20px;
     color: white;
 }
 
 .produto a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .produto a:hover {
-  color: #E0E0E0; /* Muda a cor para um cinza claro */
-  text-decoration: underline; /* Adiciona sublinhado */
+    color: #E0E0E0; /* Muda a cor para um cinza claro */
+    text-decoration: underline; /* Adiciona sublinhado */
 }
 
-
 .carrossel-produtos {
-  position: relative;
-  max-width: 100%;
-  margin: auto;
-  overflow: scroll; /* Esconde o overflow */
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; /* Esconde o overflow */
 }
 
 .carrossel-slides-produtos {
-  display: flex;
-  transition: transform 0.5s ease-in-out; /* Adiciona transição suave */
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Adiciona transição suave */
 }
 
 .carrossel-container-produtos {
-  display: flex;
+    display: flex;
 }
 
 .produto {
-  flex: 0 0 20%; /* Ajuste a largura mínima conforme necessário */
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
+    flex: 0 0 20%; /* Ajuste a largura mínima conforme necessário */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
 }
 
 .produto img {
@@ -137,7 +122,3 @@
     right: 0;
     border-radius: 0 3px 3px 0;
 }
-
-  
-  
-  
