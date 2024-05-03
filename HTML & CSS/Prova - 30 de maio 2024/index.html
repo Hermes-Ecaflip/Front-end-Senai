@@ -7,33 +7,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/carrossel.css">
     <link rel="shortcut icon" href="img/LOGO OFICIAL.png" type="image/x-icon">
 </head>
 <body>
-     <!-- sidebar -->
-     <nav id="sidebar">
+    <!-- sidebar -->
+    <aside id="sidebar">
         <div id="sidebar_content">
             <div id="user">
                 <img src="img/user.png" id="user_avatar" alt="Avatar">
-                <!-- AREÀ DO USUARIO -->
                 <p id="user_infos">
                     <span class="item-description">
                         <b>User</b>
                     </span>
-                    <!-- BOTÂO DE LOGAR -->
                     <span class="item-description">
                         <button class="btn-login">
                           <i class="fa-solid fa-sign-in"></i> Logar
                         </button>
-                        <!-- BOTÂO DE CADASTRO -->
                         <button class="btn-login">
                           <i class="fa-solid fa-user-plus"></i> Cadastrar
                         </button>
-                      </span>
+                    </span>
                 </p>
             </div>
-            
-            <!-- HOME(Voltar para paginar inicial)-->
             <ul id="side_items">
                 <li class="side-item active">
                     <a href="index.html">
@@ -43,7 +39,6 @@
                         </span>
                     </a>
                 </li>
-                <!-- LOCAL PARA IR PARA A CONTA DO USUARIO -->    
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-user"></i>
@@ -52,7 +47,6 @@
                         </span>
                     </a>
                 </li>
-                <!-- CATALOGO -->
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-shop"></i>
@@ -61,7 +55,6 @@
                         </span>
                     </a>
                 </li>
-                <!-- AREA DE NOTIFICAÇÂO -->
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-bell"></i>
@@ -70,7 +63,6 @@
                         </span>
                     </a>
                 </li>
-                <!-- CARRINHO DE COMPRAS -->
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-shopping-cart"></i>
@@ -79,7 +71,6 @@
                         </span>
                     </a>
                 </li>
-                <!-- CONFIGURAÇÂO -->
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-gear"></i>
@@ -89,13 +80,10 @@
                     </a>
                 </li>
             </ul>
-    
             <button id="open_btn">
                 <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
             </button>
         </div>
-
-        <!-- SAIR DA CONTA -->
         <div id="logout">
             <button id="logout_btn">
                 <i class="fa-solid fa-right-from-bracket"></i>
@@ -104,22 +92,100 @@
                 </span>
             </button>
         </div>
-    </nav>
+    </aside>
 
     <main>
-        <!-- banners -->
-        <section id="banner">
-            <div id="banner" class="banner1"></div>
-            <div id="banner" class="banner2">
-                <div id="textbanner2">
-                <h1>VARIEDADE DE NOTBOOKS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos possimus iste quia enim aperiam! Odit fuga consequuntur dicta officiis provident unde iure vero explicabo aperiam, molestias dolorem veritatis, hic cumque?</p>
+        <!-- Carrossel Principal -->
+        <section class="carrossel">
+            <div class="carrossel-slides">
+                <div class="carrossel-slide">
+                  <img src="img/banner 1.jpg" alt="Slide 1">
+                </div>
+                <div class="carrossel-slide">
+                  <img src="img/banner 2.jpg" alt="Slide 2">
+                </div>
+                <div class="carrossel-slide">
+                  <img src="img/banner 3.jpg" alt="Slide 3">
+                </div>
+                <div class="carrossel-slide">
+                    <img src="img/banner 4.jpg" alt="Slide 4">
+                </div>
+                <div class="carrossel-slide">
+                    <img src="img/banner 5.jpg" alt="Slide 5">
+                </div>
+                <div class="carrossel-slide">
+                    <img src="img/banner 6.jpg" alt="Slide 6">
                 </div>
             </div>
-            <div id="banner" class="banner3"></div>
-        </section>    
+            <a class="carrossel-prev" onclick="moverSlide(-1)">❮</a>
+            <a class="carrossel-next" onclick="moverSlide(1)">❯</a>
+        </section>
+        
+        <!-- Seção de Produtos com Carrossel Lado a Lado -->
+        <section class="produtos">
+            <h2>EXPLORE NOSSOS PRODUTOS</h2>
+            <div class="carrossel-produtos">
+                <div class="carrossel-slides-produtos">
+                    <div class="carrossel-container-produtos">
+                        <!-- Produto 1 -->
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/notbook.png" alt="Notebook">
+                    <p>Notebooks</p>
+                    </a>
+                </div>
+                        <!-- Produto 2 -->
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/placa mãe.png" alt="Placa-mãe">
+                    <p>Placas-mãe</p>
+                    </a>
+                </div>
+                        <!-- Produto 3 -->
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/placa de video.png" alt="Placa de video">
+                    <p>Placas de Vídeo</p>
+                    </a>
+                </div>
+                        <!-- Produto 4 -->
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/monitor.png" alt="Monitor">
+                    <p>Monitor</p>
+                    </a>
+                </div>
+                        <!-- Produto 5 -->
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/smartphone.png" alt="smartphone">
+                    <p>Smartphone</p>
+                    </a>
+                </div>
+                        <!-- Produto 6 -->
+                <div class="produto">
+                    <a href="#">
+                    <img src="img/fonte de alimentação.png" alt="fonte de alimentação">
+                    <p>Fonte de Alimentação</p>
+                    </a>
+                </div>
+                    </div>
+                </div>
+                <a class="carrossel-prev-produto" onclick="moverSlideProduto(-1)">❮</a>
+                <a class="carrossel-next-produto" onclick="moverSlideProduto(1)">❯</a>
+            </div>
+        </section>
+
+        <!-- seção de contato -->
+        <section id="contact">
+            <img src="img/banner 7.jpg" alt="banner 7">
+        </section>
     </main>
-       
+    
+    <footer>
+        <!-- Conteúdo do rodapé aqui -->
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

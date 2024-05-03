@@ -1,58 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --corprimaria: #00FD00;
-    --corsecundaria: #181818; 
-    --corfundo: #8d8d8d;
+    --corprimaria: #00FD00; /* Verde brilhante */
+    --corsecundaria: #181818; /* Quase preto */
+    --corfundo: #f0f0f0; /* Cinza claro */
+    --texto-primario: #ffffff; /* Branco */
+    --texto-secundario: #000000; /* Preto */
+    --hover-primario: #388E3C; /* Verde escuro */
+    --hover-secundario: #333333; /* Cinza escuro */
 }
 
 body {
     display: flex;
     min-height: 100vh;
-    background-color: #e3e9f7;
+    background-color: var(--hover-primario);
 }
 
 main {
     width: 100%;
-    background-color: #e3e9f7;
+    background-color: var(--hover-primario);
     background-size: cover;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     margin-top: 1%;
 }
 
-
-#banner {
+#contact img {
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    color: white;
-}
-
-.banner1 {
-    background-image: url(../img/banner1.jpg);
-    background-size: cover;
-}
-
-.banner2 {
-    background-image: url(../img/banner\ 2.jpg);
-    background-size: cover;  
-    display: flex;
-    align-items: start;
 }
 
 
-#textbanner2 h1 {
-    margin-left: 55%;
-    margin-top: 17%;
-    font-family: "Alfa Slab One", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: xx-large;
-}  
 
-.banner3 {
-    background-image: url(../img/banner\ 3.jpg);
-    background-size: cover;
-}
+
 

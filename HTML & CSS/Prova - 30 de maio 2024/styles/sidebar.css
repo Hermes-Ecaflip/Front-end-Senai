@@ -8,9 +8,13 @@
 }
 
 :root {
-    --corprimaria: #00FD00;
-    --corsecundaria: #181818; 
-    --corfundo: #8d8d8d;
+    --corprimaria: #00FD00; /* Verde brilhante */
+    --corsecundaria: #181818; /* Quase preto */
+    --corfundo: #f0f0f0; /* Cinza claro */
+    --texto-primario: #ffffff; /* Branco */
+    --texto-secundario: #000000; /* Preto */
+    --hover-primario: #388E3C; /* Verde escuro */
+    --hover-secundario: #333333; /* Cinza escuro */
 }
 
 .item-description button {
@@ -18,17 +22,17 @@
     margin: 5px;
     border: none;
     color: var(--texto-primario);
-    background-color: var(--cor-primaria);
+    background-color: var(--corprimaria);
     border-radius: 5px;
     font-size: large;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
-  .item-description button:hover {
-    background-color: #388E3C; /* Um tom mais escuro de verde */
-    color: white;
-  }
+.item-description button:hover {
+    background-color: var(--hover-primario); /* Um tom mais escuro de verde */
+    color: var(--texto-primario);
+}
   
   /* Ícones para os botões */
   .btn-login {
@@ -42,17 +46,17 @@
   }
 
 
-#sidebar {
+  #sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ffffff;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: relative;
     transition: all .5s;
     min-width: 82px;
     z-index: 2;
+    background-image: linear-gradient(to bottom, #00FD00, #388E3C);
 }
 
 #sidebar_content {
@@ -126,7 +130,7 @@
 }
 
 #logout {
-    border-top: 1px solid #e3e9f7;
+    border-top: 1px solid var(--hover-secundario);
     padding: 12px;
 }
 
@@ -147,7 +151,7 @@
     position: absolute;
     top: 30px;
     right: -10px;
-    background-color: green;
+    background-color: var(--corprimaria);
     color: white;
     border-radius: 100%;
     width: 20px;
