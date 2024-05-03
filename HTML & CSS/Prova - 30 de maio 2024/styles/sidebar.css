@@ -59,6 +59,10 @@
     background-image: linear-gradient(to bottom, #00FD00, #388E3C);
 }
 
+a {
+    text-decoration: none;
+}
+
 #sidebar_content {
     padding: 12px;
 }
