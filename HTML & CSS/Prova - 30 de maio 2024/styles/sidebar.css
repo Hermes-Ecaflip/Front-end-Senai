@@ -17,15 +17,9 @@
     --hover-secundario: #333333; /* Cinza escuro */
 }
 
-main {
-background-color: var(--corprimaria);
-}
-
-
 body {
     display: flex;
     min-height: 100vh;
-    background-color: var(--hover-primario);
 }
 
 .item-description button {
@@ -39,25 +33,25 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-  
+
 .item-description button:hover {
     background-color: var(--hover-primario); /* Um tom mais escuro de verde */
     color: var(--texto-primario);
 }
-  
-  /* Ícones para os botões */
-  .btn-login {
+
+/* Ícones para os botões */
+
+.btn-login {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .btn-login i {
+}
+
+.btn-login i {
     margin-right: 8px;
-  }
+}
 
-
-  #sidebar {
+#sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,6 +69,7 @@ a {
 
 #sidebar_content {
     padding: 12px;
+    position: fixed;
 }
 
 #user {
@@ -115,7 +110,7 @@ a {
 }
 
 .side-item.active {
-    background-color: var(--corprimaria);   
+    background-color: var(--corprimaria);
 }
 
 .side-item:hover:not(.active),
@@ -146,6 +141,8 @@ a {
 #logout {
     border-top: 1px solid var(--hover-secundario);
     padding: 12px;
+    position: fixed;
+    bottom: 0;
 }
 
 #logout_btn {
@@ -165,8 +162,8 @@ a {
     position: absolute;
     top: 30px;
     right: -10px;
-    background-color: var(--corprimaria);
-    color: white;
+    background-color: var(--texto-primario);
+    color: black;
     border-radius: 100%;
     width: 20px;
     height: 20px;

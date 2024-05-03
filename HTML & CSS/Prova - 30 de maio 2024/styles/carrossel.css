@@ -88,7 +88,7 @@
   position: relative;
   max-width: 100%;
   margin: auto;
-  overflow: hidden; /* Esconde o overflow */
+  overflow: scroll; /* Esconde o overflow */
 }
 
 .carrossel-slides-produtos {

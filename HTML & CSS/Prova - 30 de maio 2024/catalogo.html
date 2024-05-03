@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/catalogo.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/LOGO OFICIAL.png" type="image/x-icon">
+    <title>EYZE OVER</title>
+</head>
+<body>
+     <!-- sidebar -->
+     <aside id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="img/user.png" id="user_avatar" alt="Avatar">
+                <p id="user_infos">
+                    <span class="item-description">
+                        <b>Usuário</b>
+                    </span>
+                    <span class="item-description">
+                        <a href="login.html">
+                        <button class="btn-login">  
+                          <i class="fa-solid fa-sign-in"></i> Logar
+                        </button>
+                        </a>
+                        <a href="cadastro.html">
+                        <button class="btn-login">
+                          <i class="fa-solid fa-user-plus"></i> Cadastrar
+                        </button>
+                        </a>
+                    </span>
+                </p>
+            </div>
+            <ul id="side_items">
+                <li class="side-item active">
+                    <a href="index.html">
+                        <i class="fa-solid fa-home"></i>
+                        <span class="item-description">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">
+                            Perfil
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="catalogo.html">
+                        <i class="fa-solid fa-shop"></i>
+                        <span class="item-description">
+                            Catalogo
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="item-description">
+                            Notificações
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="item-description">
+                            Carrinho
+                        </span>
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="item-description">
+                            Configurações
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div id="logout">
+            <button id="logout_btn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="item-description">
+                    Logout
+                </span>
+            </button>
+        </div>
+    </aside>
+    <!-- seção do catalogo -->
+    <main>
+        <h1>Catalogo</h1>
+        <section>
+             <!-- Fileira 1 -->
+            <div class="produto">
+                <img src="img/notebook 1.png" alt="notebook">
+                <h2>ROG Zephyrus G16 (2024) GU605MZ-QR084W</h2>
+                    <li>Windows 11 Home</li>
+                    <li>NVIDIA® GeForce RTX™ 4080</li>
+                    <li>NPU Intel® AI Boost</li>
+                    <li>Processador Intel® Core™ Ultra 9 185H</li>
+                    <li>2.5K (2560 x 1600, WQXGA) 16:10 240Hz OLED Tela ROG Nebula</li>
+                    <li>2TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage</li>
+                <div id="preco">
+                <p class="preco">R$ 29.699,10</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/notebook 2.png" alt="notebook 2">
+                <h2>ROG Flow Z13
+                    GZ301VF-MU025W</h2>
+                    <li>Windows 11 Home</li>
+                    <li>NVIDIA® GeForce RTX™ 2050 Laptop GPU</li>
+                    <li>NPU Intel® AI Boost</li>
+                    <li>Processador Intel® Core™ Ultra 9 185H</li>
+                    <li>2.5K (2560 x 1600, WQXGA) 16:10 240Hz OLED Tela ROG Nebula</li>
+                    <li>2TB M.2 NVMe™ PCIe® 4.0 Performance SSD storage</li>
+                <div id="preco">
+                <p class="preco">R$ 12.599,10</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/smartphone 1.png" alt="smartphone">
+                <h2>Smartphone Gamer ASUS ROG Phone 7 Ultimate</h2>
+                    <li>Qualcomm Snapdragon 8 Gen 2</li>
+                    <li>LPDDR5X 16GB</li>
+                    <li>UFS4.0 512GB</li>
+                    <li>Bateria de 6000mAh</li>
+                <div id="preco-smartphone">
+                <p class="preco">R$ 8.999,10</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+        <!-- Fileira 2 -->
+        <section>
+            <div class="produto">
+                <img src="img/monitor 1.png" alt="monitor 1">
+                <h2>ROG Swift OLED PG48UQ</h2>
+                    <li>Monitor Gaming ROG Swift OLED PG48UQ – 47.5-inch 4K, OLED, 138Hz (em overclock), 0.1 ms (GTG), G-SYNC® compatível, revestimento de microtextura antirreflexo, dissipador de calor personalizado, brilho uniforme, 98% DCI-P3, 10 bits verdadeiro, HDMI® 2.1, DisplayPort™ 1.4</li>
+                <div id="preco-monitor">
+                <p class="preco">R$ 15.616,13</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/placa de video 1.png" alt="placa de video 1">
+                <h2>ROG Matrix Platinum GeForce RTX™ 4090 24GB GDDR6X</h2>
+                    <li>ROG Matrix GeForce RTX™ 4090 24GB GDDR6X, a primeira placa de vídeo apresentando composto térmico de metal líquido, com um cooler AIO de 360 mm para o mais alto clock de GPU</li>
+                <div id="preco-placa-de-video">
+                <p class="preco">R$ 18.561,22</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="img/console.png" alt="console">
+                <h2>Console portátil ROG Ally RC71L-NH010W</h2>
+                    <li>Windows 11 Home</li>
+                    <li>AMD Ryzen™ Z1 Extreme Processor</li>
+                    <li>NPU Intel® AI Boost</li>
+                    <li>AMD Radeon™ Graphics (AMD RDNA™ 3, 12 CUs, up to 2.7 GHz, up to 8.6 Teraflops)</li>
+                    <li>7-inch, FHD (1920 x 1080) 16:9, Refresh Rate: 120Hz</li>
+                    <li>16GB LPDDR5 onboard memory</li>
+                <div id="preco-console">
+                <p class="preco">R$ 6.299,10</p>
+                <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
