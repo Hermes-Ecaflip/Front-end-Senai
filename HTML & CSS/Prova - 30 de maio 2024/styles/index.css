@@ -13,12 +13,12 @@
 body {
     display: flex;
     min-height: 100vh;
-    background-color: transparent;
+    background-color: var(--hover-primario);
 }
 
 main {
     width: 100%;
-    background-color: transparent;
+    background-color: var(--hover-primario);
     background-size: cover;
     min-height: 100vh;
     display: flex;
