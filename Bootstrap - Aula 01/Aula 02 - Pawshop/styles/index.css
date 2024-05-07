@@ -1,0 +1,51 @@
+:root{  
+    --azul: #6EB3D0;
+    --verde: #B6D7A8;
+    --rosa: #F7B6D2;
+    --laranja: #F4A623;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+
+header nav {
+    background-color: var(--azul);
+}
+
+#introducao{
+    color: var(--azul);
+}
+
+#catalogo{
+    h3{color: var(--laranja);
+}
+
+    h5{
+        color: var(--laranja);
+    }
+
+    h4 {
+        color: var(--verde);
+    }
+}
+
+button {
+    background-color: var(--rosa);
+    border: none;
+}
+
+#adote {
+    h3{
+        color: var(--rosa);
+    }
+
+    h5{
+        color: var(--azul);
+    }
+}
+
+
+
+footer {
+    background-color: var(--azul);
+}
