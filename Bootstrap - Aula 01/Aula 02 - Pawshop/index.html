@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="shortcut icon" href="img/logo/logoWhite.svg" type="image/x-icon">
 </head>
-<body>
+<body data-bs-theme="light">
     <header class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -37,7 +37,7 @@
                             <a class="nav-link" href="#">Contatos</a>
                         </li>
                     </ul>
-                    <button type="button" class="btn">
+                    <button id="theme" type="button" onclick="trocarTema()" class="btn">
                         <img src="icons/moon-fill.svg" alt="tema-escuro">
                     </button>
                 </div>
@@ -136,7 +136,7 @@
                 
             </div>
         </section>
-        <section id="adote" class="m-5">
+        <section class="container-fluid p-0 m-0" id="adote" >
             <h3 class="text-center">ADOTE UM PET</h3>
             <div class="d-flex">
                 <div class="d-flex flex-column">
@@ -146,8 +146,8 @@
                         <label for="floatingInput">Email address</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input type="tel" class="form-control" id="floatingPassword" placeholder="(12) 1234-5678">
+                        <label for="floatingPassword">Telefone</label>
                     </div>
                 </div> 
                 <img src="img/imgBanner.png" alt="bannerfinal">
@@ -179,5 +179,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
             crossorigin="anonymous"></script>
+    <script>
+        //apertar no botao de lua
+        //trocar para o tema dark
+        //apertar no botao de sol
+        //trocar para o tema light
+        // procedimento nome() fimprocedimento
+        
+            function trocarTema(){
+        var corpo = document.body;
+        var botao = document.querySelector("#theme");
+        if(corpo.classList.contains("temaClaro")){
+            corpo.classList.replace("temaClaro","temaEscuro");
+        }else{
+            corpo.classList.replace("temaEscuro","temaClaro");
+            corpo.setAttribute("data-bs-theme","light");
+        }
+    }
+    </script>        
 </body>
 </html>

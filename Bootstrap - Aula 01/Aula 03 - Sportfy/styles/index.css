@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Estilos para o conteúdo do sidebar */
+#sidebar_content {
+    padding: 20px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#user_infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-description {
+    margin-bottom: 5px;
+}
+
+.btn-login {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #ccc;
+}
+
+/* Estilos para os itens do sidebar */
+.side-item {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+.side-item a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.side-item.active {
+    background-color: #555;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+/* Estilos para o botão de logout */
+#logout {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+#logout_btn {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#logout_btn:hover {
+    background-color: #777;
+}
