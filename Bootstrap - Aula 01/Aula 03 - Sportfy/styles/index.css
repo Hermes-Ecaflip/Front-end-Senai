@@ -170,6 +170,7 @@ header {
     font-size: 16px;
     cursor: pointer;
     color: var(--cor-hover);
+    transition: background-color 0.3s ease;
 }
 .install-button:hover {
     background-color: #1ed760;
@@ -192,3 +193,5 @@ header {
 .username {
     font-size: 18px;
 }
+
+
