@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/* Variáveis de cores */
+:root { 
+    --primary-color: #3c1c14;
+    --secondary-color: #f7f5ed;
+    --tertiary-color: #ca5b2b;
+    --quaternary-color: #9d8c84;
+    --quinary-color: #826e63;
+}
+
+/* Estilos globais */
+* {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--quinary-color);
+}
+
+#logo{
+    width: 100px;
+
+}
+
+/* Controles do carrossel */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+/* Principal */
+main {
+    background-color: var(--quaternary-color);
+}
