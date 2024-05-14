@@ -16,6 +16,10 @@
     font-style: normal;
 }
 
+bodybackground-color {
+    : var(--quaternary-color);
+}
+
 /* Cabeçalho */
 header {
     background-color: var(--quinary-color);
@@ -33,5 +37,77 @@ header {
 
 /* Principal */
 main {
-    background-color: var(--quaternary-color);
+    background-color: var(--secondary-color);
+}
+
+
+.produto a {
+    text-decoration: none;
+}
+
+.produto a:hover {
+    color: var(--primary-color); /* Muda a cor para um cinza claro */
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+.carrossel-produtos {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden; /* Esconde o overflow */
+}
+
+.carrossel-slides-produtos {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Adiciona transição suave */
+}
+
+.carrossel-container-produtos {
+    display: flex;
+}
+
+.produto {
+    flex: 0 0 20%; /* Ajuste a largura mínima conforme necessário */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.carrossel-prev-produto, .carrossel-next-produto {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.carrossel-prev-produto {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.carrossel-next-produto {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+#contact {
+    
+}
+
+#contact img {
+    width: 100%;
 }

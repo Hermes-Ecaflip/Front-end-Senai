@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand col-5" href="#">
+                <a class="navbar-brand col-5" href="index.html">
                     <img id="logo" class="ms-5" src="img/LOGO OFICIAL.png" alt="logo Eyze Coffe">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -22,7 +22,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active me-2" href="#"><i class="fas fa-home me-2"></i>Home</a>
+                            <a class="nav-link active me-2" href="index.html"><i class="fas fa-home me-2"></i>Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link me-2" href="#"><i class="fas fa-mug-hot me-2"></i>Catálogo</a>
@@ -35,45 +35,76 @@
             </div>
         </nav>
     </header>
-    
     <!-- Carrossel principal -->
-    <main>
+    <main class="p-0 m-0">
         <section id="carousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- Itens do carrossel -->
+                    <div class="carousel-item active">
+                        <img src="img/Grani di byte.svg" class="d-block w-100" alt="Eyze">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Banner 1.svg" class="d-block w-100" alt="Banner1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Banner 2.svg" class="d-block w-100" alt="Banner2">
+                    </div>
+                </div>
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <!-- Itens do carrossel -->
-                <div class="carousel-item active">
-                    <img src="img/Grani di byte.svg" class="d-block w-100" alt="Eyze">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Banner 1.svg" class="d-block w-100" alt="Banner1">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/Banner 2.svg" class="d-block w-100" alt="Banner2">
-                </div>
-            </div>
-            <!-- Controles do carrossel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
-        </div>
         </section>
 
-        <section id="demonstração">
-            
+        <section id="produtos" class="container-fluid text-dark container-fluid p-0 m-0">
+            <h2 class="text-center mb-5 mt-5">EXPLORE NOSSOS PRODUTOS</h2>
+            <div id="demonstracao" class="container-fluid p-0 m-0 d-flex justify-content-evenly text-center">
+                        <!-- Produto 1 -->
+                        <div class="produto col-4">
+                            <a href="catalogo.html">
+                                <img src="img/Cappuccino.svg" alt="Cappuccino">
+                                <h4 class="text-dark">Cappuccino</h4>
+                            </a>
+                        </div>
+                        <!-- Produto 2 -->
+                        <div class="produto col-4">
+                            <a href="catalogo.html">
+                                <img src="img/Affogato.svg" alt="Affogato">
+                                <h4 class="text-dark">Affogato</h4>
+                            </a>
+                        </div>
+                        <!-- Produto 3 -->
+                        <div class="produto col-4">
+                            <a href="catalogo.html">
+                                <img src="img/Cold Brew.svg" alt="Cold Brew">
+                                <h4 class="text-dark">Cold Brew</h4>
+                            </a>
+                        </div>
+            </div>         
+               
         </section>
+        <section id="contact" class="">
+            <!-- Imagem para desktop -->
+<img src="img/Contact.svg" class="img-fluid d-none d-md-block" alt="Imagem para desktop">
+
+<!-- Imagem para mobile -->
+<img src="img/Contact Mobile.svg" class="img-fluid d-block d-md-none" alt="Imagem para mobile">
+
+           </section> 
+       
     </main>
-    
     <!-- Scripts do Bootstrap e FontAwesome -->
     <script src="https://kit.fontawesome.com/13033c9605.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
