@@ -1,0 +1,41 @@
+/* Styles/index.css */
+
+/* Cor de fundo do corpo e estilo de fonte padrão */
+body {
+  background-color: #f8f9fa; /* Cor de fundo claro */
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+}
+
+/* Estilização do logotipo */
+#logo img {
+  height: 100px; /* Altura do logotipo */
+  width: auto; /* Largura automática para manter a proporção */
+}
+
+/* Estilização dos links da navegação */
+.nav-link {
+  color: #ffffff; /* Cor do texto dos links */
+  margin-right: 1rem; /* Espaçamento à direita dos links */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Cor do texto ao passar o mouse */
+}
+
+.btn-outline-success {
+  color: #28a745; /* Cor do texto do botão */
+  border-color: #28a745; /* Cor da borda do botão */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Cor de fundo ao passar o mouse */
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

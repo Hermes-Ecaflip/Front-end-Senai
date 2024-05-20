@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f9fa; /* Cor de fundo claro */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+  }
+  
+  /* Estilização do logotipo */
+  #logo img {
+    height: 100px; /* Altura do logotipo */
+    width: auto; /* Largura automática para manter a proporção */
+  }
+  
+  /* Estilização dos links da navegação */
+  .nav-link {
+    color: #ffffff; /* Cor do texto dos links */
+    margin-right: 1rem; /* Espaçamento à direita dos links */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107; /* Cor do texto ao passar o mouse */
+  }
+  
+  .btn-outline-success {
+    color: #28a745; /* Cor do texto do botão */
+    border-color: #28a745; /* Cor da borda do botão */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745; /* Cor de fundo ao passar o mouse */
+    color: #ffffff; /* Cor do texto ao passar o mouse */
+  }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  #login{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: 300px;
+    margin-top: 10%;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #login input[type="text"],
+  #login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #login input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

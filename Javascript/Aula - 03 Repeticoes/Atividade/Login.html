@@ -7,7 +7,7 @@
           rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/login.css">
     <title>EYZE MOVIE</title>
 </head>
 <body>
@@ -38,18 +38,19 @@
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <button class="btn btn-outline-success ms-2" type="button"><a class="nav-link active text-center" href="Login.html">Login</a></button>
               </div>
             </div>
           </nav>
     </header>
 
-    <main class="body-dark">
-        <div class="container mt-5">
-            <div class="row" id="listaFilmes">
-            <!-- Os filmes serão inseridos aqui pelo JavaScript -->
-            </div>
-        </div>
+    <main>
+        <form id="login" onsubmit="event.preventDefault(); verificarLogin();">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <input type="submit" value="Entrar">
+          </form>
     </main>
    
 </body> 
