@@ -75,4 +75,18 @@ main {
   #login input[type="submit"]:hover {
     background-color: #0056b3;
   }
+
+  #mostrarSenha {
+    margin-top: 10px;
+  }
+  
+  #mostrarSenha input[type="checkbox"] {
+    accent-color: #00ff2a; /* Cor do checkbox */
+    margin-right: 5px; /* Espaçamento à direita do checkbox */
+  }
+  
+  #mostrarSenha label {
+    color: #000000; /* Cor do texto */
+    cursor: pointer; /* Cursor em forma de ponteiro ao passar o mouse */
+  }
   

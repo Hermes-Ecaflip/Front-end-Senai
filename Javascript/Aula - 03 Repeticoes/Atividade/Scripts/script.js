@@ -25,16 +25,26 @@ var filmes = [
   }
 
   // Script para verificar o login
-function verificarLogin() {
+  function verificarLogin() {
     var usuario = document.getElementById('usuario').value;
     var senha = document.getElementById('senha').value;
   
     if (usuario === 'ADM' && senha === 'ADM') {
       alert('Seja bem-vindo!');
+      window.location = 'index.html';
     } else {
       alert('Informações de login incorretas. Tente novamente.');
     }
   }
+
+  function mostrarSenha() {
+    var senha = document.getElementById('senha');
+    if (senha.type === "password") {
+        senha.type = "text";
+    } else {
+        senha.type = "password";
+    }
+}
   
   window.onload = mostrarFilmes;
   
