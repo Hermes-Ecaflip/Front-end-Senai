@@ -43,7 +43,7 @@ tr:nth-child(even) {
     background-color: #ffffff;
 }
 
-button[type="button"] {
+button[type="submit"] {
   background-color: #02ACAC; 
   color: white;  
   padding: 10px 20px; 
