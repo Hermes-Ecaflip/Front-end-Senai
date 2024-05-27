@@ -9,6 +9,7 @@
 
 // POD (Programação orientada a objeto)
 class Cliente {
+    // atributo / propriedade = são caracteristicas do objeto
     nome;
     conta;
     saldo;
@@ -18,6 +19,7 @@ class Cliente {
     dataDeNascimento;
     sacar(valor){
         this.saldo -= valor
+        // return = retorna um valor assim que o metodo for chamado
         return `O valor de R$ ${valor} foi sacado com sucesso!`
     }
     depositar(valor){
