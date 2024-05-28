@@ -56,4 +56,3 @@ function calcularDuracao(velocidade) {
     const baseSpeed = 220; // Velocidade máxima do carro
     return Math.max(0.5, (baseSpeed - velocidade) / baseSpeed * 2);
 }
-
