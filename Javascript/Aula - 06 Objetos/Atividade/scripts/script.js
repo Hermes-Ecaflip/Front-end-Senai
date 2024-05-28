@@ -27,15 +27,15 @@ class Carro {
     }
 }
 
-document.getElementById('carForm').addEventListener('submit', function(event) {
+document.querySelector('#carForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
     // Obtendo os valores do formulário
-    const marca = document.getElementById('marca').value;
-    const modelo = document.getElementById('modelo').value;
-    const ano = document.getElementById('ano').value;
-    const cor = document.getElementById('cor').value;
-    const velocidadeMaxima = document.getElementById('velocidadeMaxima').value;
+    const marca = document.querySelector('#marca').value;
+    const modelo = document.querySelector('#modelo').value;
+    const ano = document.querySelector('#ano').value;
+    const cor = document.querySelector('#cor').value;
+    const velocidadeMaxima = document.querySelector('#velocidadeMaxima').value;
     
     // Instanciando o objeto carro com os valores do formulário
     const carroUsuario = new Carro(marca, modelo, ano, cor, velocidadeMaxima);
@@ -51,7 +51,7 @@ document.getElementById('carForm').addEventListener('submit', function(event) {
 });
 
 function animarRoda(velocidade) {
-    const roda = document.getElementById('rodaCarro');
+    const roda = document.querySelector('#rodaCarro');
     roda.style.animation = `girarRoda ${calcularDuracao(velocidade)}s linear infinite`;
 }
 
