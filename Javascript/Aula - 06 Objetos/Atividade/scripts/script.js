@@ -27,31 +27,34 @@ class Carro {
     }
 }
 
-// Instanciando o objeto carro
-const meuCarro = new Carro('Ford', 'Mustang', 2020, 'vermelho', 220);
-
-// Função para acelerar o carro
-function acelerar(valor) {
-    meuCarro.acelerar(valor);
-}
-
-// Inicialização
-document.addEventListener('DOMContentLoaded', () => {
-    meuCarro.mostrarVelocidade();
+document.getElementById('carForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    // Obtendo os valores do formulário
+    const marca = document.getElementById('marca').value;
+    const modelo = document.getElementById('modelo').value;
+    const ano = document.getElementById('ano').value;
+    const cor = document.getElementById('cor').value;
+    const velocidadeMaxima = document.getElementById('velocidadeMaxima').value;
+    
+    // Instanciando o objeto carro com os valores do formulário
+    const carroUsuario = new Carro(marca, modelo, ano, cor, velocidadeMaxima);
+    
+    // Atualizando a função acelerar para usar o carro do usuário
+    window.acelerar = function(valor) {
+        carroUsuario.acelerar(valor);
+        animarRoda(carroUsuario.velocidadeAtual);
+    };
+    
+    // Mostrando a velocidade inicial
+    carroUsuario.mostrarVelocidade();
 });
-
-function acelerar(valor) {
-    meuCarro.acelerar(valor);
-    animarRoda(meuCarro.velocidadeAtual);
-}
 
 function animarRoda(velocidade) {
     const roda = document.getElementById('rodaCarro');
     roda.style.animation = `girarRoda ${calcularDuracao(velocidade)}s linear infinite`;
 }
 
-// Essa função calcula a duração da animação baseada na velocidade atual
-// Quanto maior a velocidade, mais rápida será a rotação
 function calcularDuracao(velocidade) {
     const baseSpeed = 220; // Velocidade máxima do carro
     return Math.max(0.5, (baseSpeed - velocidade) / baseSpeed * 2);

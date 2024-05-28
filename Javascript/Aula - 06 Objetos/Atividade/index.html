@@ -10,7 +10,32 @@
     <title>Informações do Carro</title>
 </head>
 <body>
-    <main class="container mt-5" >
+    <main class="container mt-5">
+        <!-- Formulário para inserção das informações do carro -->
+        <form id="carForm">
+            <div class="mb-3">
+                <label for="marca" class="form-label">Marca</label>
+                <input type="text" class="form-control" id="marca" required>
+            </div>
+            <div class="mb-3">
+                <label for="modelo" class="form-label">Modelo</label>
+                <input type="text" class="form-control" id="modelo" required>
+            </div>
+            <div class="mb-3">
+                <label for="ano" class="form-label">Ano</label>
+                <input type="number" class="form-control" id="ano" required>
+            </div>
+            <div class="mb-3">
+                <label for="cor" class="form-label">Cor</label>
+                <input type="text" class="form-control" id="cor" required>
+            </div>
+            <div class="mb-3">
+                <label for="velocidadeMaxima" class="form-label">Velocidade Máxima (km/h)</label>
+                <input type="number" class="form-control" id="velocidadeMaxima" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Criar Carro</button>
+        </form>
+
         <!-- Título da seção -->
         <h2>Informações do Carro</h2>
         <!-- Área de informação do carro -->
