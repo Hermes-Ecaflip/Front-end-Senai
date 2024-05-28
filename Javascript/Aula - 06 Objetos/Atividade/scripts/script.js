@@ -40,3 +40,20 @@ document.addEventListener('DOMContentLoaded', () => {
     meuCarro.mostrarVelocidade();
 });
 
+function acelerar(valor) {
+    meuCarro.acelerar(valor);
+    animarRoda(meuCarro.velocidadeAtual);
+}
+
+function animarRoda(velocidade) {
+    const roda = document.getElementById('rodaCarro');
+    roda.style.animation = `girarRoda ${calcularDuracao(velocidade)}s linear infinite`;
+}
+
+// Essa função calcula a duração da animação baseada na velocidade atual
+// Quanto maior a velocidade, mais rápida será a rotação
+function calcularDuracao(velocidade) {
+    const baseSpeed = 220; // Velocidade máxima do carro
+    return Math.max(0.5, (baseSpeed - velocidade) / baseSpeed * 2);
+}
+
