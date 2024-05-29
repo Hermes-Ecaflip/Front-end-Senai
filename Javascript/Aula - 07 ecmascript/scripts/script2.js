@@ -8,3 +8,7 @@ var promessa = new Promise((resolve,reject) => {
         reject("O usuario não é o Ângelo")
     }
 })
+
+promessa.then((resultado) => {
+    console.log(resultado)
+}) 
