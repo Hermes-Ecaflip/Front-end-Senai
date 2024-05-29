@@ -3,16 +3,16 @@ const games = ['Super Mario', 'Zelda', 'Sonic'];
 
 // Função para substituir texto
 function replaceText() {
-  let text = document.getElementById('text-module').value;
+  let text = document.querySelector('#text-module').value;
   // Substituir 'replace' por 'replace all'
   text = text.replace(/replace/g, 'replace all');
-  document.getElementById('text-module').value = text;
+  document.querySelector('#text-module').value = text;
 }
 
 // Função para verificar se o usuário é ADM
 function checkAdmin() {
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+  const username = document.querySelector('#username').value;
+  const password = document.querySelector('#password').value;
   new Promise((resolve, reject) => {
     if (username === 'ADM' && password === 'ADM') {
       resolve('Usuário verificado como ADM.');
@@ -21,16 +21,16 @@ function checkAdmin() {
     }
   })
   .then(message => {
-    document.getElementById('admin-result').textContent = message;
+    document.querySelector('#admin-result').textContent = message;
   })
   .catch(error => {
-    document.getElementById('admin-result').textContent = error;
+    document.querySelector('#admin-result').textContent = error;
   });
 }
 
 // Função para pesquisar jogo
 function searchGame() {
-  const search = document.getElementById('game-search').value;
+  const search = document.querySelector('#game-search').value;
   const result = games.includes(search) ? 'Jogo encontrado!' : 'Jogo não encontrado!';
-  document.getElementById('search-result').textContent = result;
+  document.querySelector('#search-result').textContent = result;
 }
