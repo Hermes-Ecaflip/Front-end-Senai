@@ -7,6 +7,7 @@ function replaceText() {
   // Substituir 'replace' por 'replace all'
   text = text.replace(/replace/g, 'replace all');
   document.querySelector('#text-module').value = text;
+  console.log(replaceAll())
 }
 
 // Função para verificar se o usuário é ADM
