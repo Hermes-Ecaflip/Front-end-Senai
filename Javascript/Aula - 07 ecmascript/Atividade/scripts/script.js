@@ -1,5 +1,5 @@
 // Array de jogos para a pesquisa
-const games = ['Super Mario', 'Zelda', 'Sonic'];
+const games = ['Super Mario', 'Zelda', 'Sonic', 'Mineirinho', 'Minecraft', 'Auau'];
 
 // Função para substituir texto
 function replaceText() {
