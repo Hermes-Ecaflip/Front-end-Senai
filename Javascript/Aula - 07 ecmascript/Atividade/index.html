@@ -16,8 +16,8 @@
             <div class="form-group">
                 <label for="text-module">Módulo de Texto:</label>
                 <textarea class="form-control" id="text-module" rows="3"></textarea>
-                <input type="text" name="termoremover" id="termoremover" placeholder="O termo que deseja remover">
-                <input type="text" name="termoAdicionado" id="termoAdicionado" placeholder="O termo que deseja adicionar">
+                <input type="text" name="termoAdicionado" id="termoAdicionado" class="form-control mt-2" placeholder="O termo que deseja adicionar">
+                <input type="text" name="termoremover" id="termoremover" class="form-control mt-2" placeholder="O termo que deseja remover">
                 <button class="btn btn-primary mt-2" onclick="replaceText()">Substituir</button>
                 <button class="btn btn-primary mt-2" onclick="replaceText()">Substituir Tudo</button>
 
@@ -29,8 +29,8 @@
                 <input type="text" class="form-control" id="username">
                 <label for="password">Senha:</label>
                 <input type="password" class="form-control" id="password">
-                <button class="btn btn-success mt-2" onclick="checkAdmin()">Verificar ADM</button>
-                <p id="admin-result"></p>
+                <button class="btn btn-success mt-2" onclick="checkAdmin()">Verificar<i class="fa-solid fa-check ms-2"></i></button>
+                <p id="admin-result" class="mt-2"></p>
             </div>
             
             <!-- Pesquisa de Jogo -->
