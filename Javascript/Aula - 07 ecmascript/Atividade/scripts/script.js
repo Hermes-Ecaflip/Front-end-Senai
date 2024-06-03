@@ -13,8 +13,6 @@ function replaceText() {
   document.querySelector('#text-module').value = text;
 }
 
-
-
 // Função para verificar se o usuário é ADM
 function checkAdmin() {
   const username = document.querySelector('#username').value;
