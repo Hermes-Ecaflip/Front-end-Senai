@@ -16,7 +16,11 @@
             <div class="form-group">
                 <label for="text-module">Módulo de Texto:</label>
                 <textarea class="form-control" id="text-module" rows="3"></textarea>
-                <button class="btn btn-primary mt-2" onclick="replaceText()">Substituir Texto</button>
+                <input type="text" name="termoremover" id="termoremover" placeholder="O termo que deseja remover">
+                <input type="text" name="termoAdicionado" id="termoAdicionado" placeholder="O termo que deseja adicionar">
+                <button class="btn btn-primary mt-2" onclick="replaceText()">Substituir</button>
+                <button class="btn btn-primary mt-2" onclick="replaceText()">Substituir Tudo</button>
+
             </div>
             
             <!-- Verificação de ADM -->

@@ -4,11 +4,16 @@ const games = ['Super Mario', 'Zelda', 'Sonic', 'Mineirinho', 'Minecraft', 'Auau
 // Função para substituir texto
 function replaceText() {
   let text = document.querySelector('#text-module').value;
-  // Substituir 'replace' por 'replace all'
-  text = text.replace(/replace/g, 'replace all');
+  const termToReplace = document.querySelector('#termoremover').value;
+  const replacementTerm = document.querySelector('#termoAdicionado').value;
+
+  // Substituir todas as ocorrências do termo
+  text = text.replace(new RegExp(termToReplace, 'g'), replacementTerm);
+
   document.querySelector('#text-module').value = text;
-  console.log(replaceAll())
 }
+
+
 
 // Função para verificar se o usuário é ADM
 function checkAdmin() {
