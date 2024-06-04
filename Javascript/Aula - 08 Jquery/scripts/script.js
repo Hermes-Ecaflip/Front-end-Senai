@@ -17,5 +17,5 @@ $("h6").on("click",function(){
 })
 
 $("#fechar").on("click",function(){
-    $("#propaganda").slideup(500)
+    $("#propaganda").hide(500)
 })
