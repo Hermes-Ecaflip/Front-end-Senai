@@ -1,27 +1,31 @@
+/* Estilo para a classe .mudei */
 .mudei {
-    transition: 1s;
-    color: red;
-    font-size: 15pt;
+    transition: 1s; /* Transição suave de 1 segundo */
+    color: red; /* Cor do texto vermelha */
+    font-size: 15pt; /* Tamanho da fonte de 15 pontos */
 }
 
+/* Estilo para o elemento com id #propaganda */
 #propaganda {
-    width: 300px;
-    height: 300px;
-    background-color: blueviolet;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 300px; /* Largura de 300 pixels */
+    height: 300px; /* Altura de 300 pixels */
+    background-color: blueviolet; /* Cor de fundo azul-violeta */
+    color: white; /* Cor do texto branca */
+    display: flex; /* Exibição flexível */
+    flex-direction: column; /* Direção da coluna para os filhos flexíveis */
+    align-items: center; /* Alinhamento central dos filhos flexíveis */
 }
 
+/* Estilo para a classe .tema-claro */
 .tema-claro {
-    background-color: white;
-    color: black;
-    transition: 1s;
+    background-color: white; /* Cor de fundo branca */
+    color: black; /* Cor do texto preta */
+    transition: 1s; /* Transição suave de 1 segundo */
 }
 
+/* Estilo para a classe .tema-escuro */
 .tema-escuro {
-    background-color: black;
-    color: white;
-    transition: 1s;
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+    transition: 1s; /* Transição suave de 1 segundo */
 }
