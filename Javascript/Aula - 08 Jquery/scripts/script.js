@@ -15,3 +15,7 @@ $("h6").on("click",function(){
     $("main").removeClass("tema-claro");
     $("h3").css("color","red");
 })
+
+$("#fechar").on("click",function(){
+    $("#propaganda").slideup(500)
+})
