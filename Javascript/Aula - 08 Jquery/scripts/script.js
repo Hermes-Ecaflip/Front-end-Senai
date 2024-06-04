@@ -13,4 +13,5 @@ pPrincipal.on("click", function(){
 $("h6").on("click",function(){
     $("main").addClass("tema-escuro");
     $("main").removeClass("tema-claro");
+    $("h3").css("color","red");
 })
