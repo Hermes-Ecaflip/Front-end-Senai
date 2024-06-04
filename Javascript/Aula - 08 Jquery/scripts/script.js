@@ -9,3 +9,8 @@ document.querySelector("#nomeUsuario").innerHTML = nomeUsuario
 pPrincipal.on("click", function(){
     pPrincipal.addclass("mudei");
 })
+
+$("h6").on("click",function(){
+    $("main").addClass("tema-escuro");
+    $("main").removeClass("tema-claro");
+})
