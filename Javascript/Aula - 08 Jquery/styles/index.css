@@ -3,3 +3,15 @@
     color: red;
     font-size: 15pt;
 }
+
+.tema-claro {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.tema-escuro {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
