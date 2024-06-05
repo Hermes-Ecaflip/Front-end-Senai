@@ -35,9 +35,9 @@
 
   <main class="container d-flex flex-column justify-content-center align-items-center">
     <!-- Catálogo de Produtos -->
-    <section id="catalogo-produtos">
+    <section id="catalogo-produtos" class="row">
       <h1>Catálogo de Produtos</h1>
-      <div id="catalogo"></div>
+      <div id="catalogo" class="col-md-4 d-flex"></div>
     </section>
     
     <!-- Calculadora de Preços -->
@@ -52,7 +52,7 @@
     <section id="adicionar-produtos">
       <h2>Adicionar Produto</h2>
       <input type="text" id="nomeProduto" class="form-control mb-2" placeholder="Nome do Produto">
-      <input type="number" id="valorProduto" class="form-control" placeholder="Valor">
+      <input type="number" id="valorProduto" class="form-control mb-2" placeholder="Valor">
       <input type="text" id="imagemProduto" class="form-control mb-2" placeholder="Caminho da Imagem">
       <button type="button" class="btn btn-primary mt-2" id="adicionar">Adicionar Produto</button>
     </section>

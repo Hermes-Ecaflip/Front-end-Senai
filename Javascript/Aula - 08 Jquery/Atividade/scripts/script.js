@@ -23,11 +23,13 @@ $(document).ready(function() {
       },
       aplicarTemaEscuro: function() {
         $('body').addClass('dark-theme');
+        $('.navbar').addClass('dark-theme'); // Adiciona a classe ao navbar também
         $('#trocaTemaDark').hide();
         $('#trocaTemaClaro').show();
       },
       aplicarTemaClaro: function() {
         $('body').removeClass('dark-theme');
+        $('.navbar').removeClass('dark-theme'); // Remove a classe do navbar também
         $('#trocaTemaClaro').hide();
         $('#trocaTemaDark').show();
       },
@@ -43,19 +45,29 @@ $(document).ready(function() {
       adicionarProduto: function() {
         let nomeProduto = $('#nomeProduto').val();
         let valorProduto = parseFloat($('#valorProduto').val());
+        let imagemProduto = $('#imagemProduto').val();
         
-        if (nomeProduto && !isNaN(valorProduto) && valorProduto > 0) {
-          $('#catalogo').append(`<p>${nomeProduto} - R$ ${valorProduto.toFixed(2)}</p>`);
+        if (nomeProduto && !isNaN(valorProduto) && valorProduto > 0 && imagemProduto) {
+          let cardHtml = `
+            <div class="card m-2" style="width: 18rem;">
+              <img src="${imagemProduto}" class="card-img-top" alt="${nomeProduto}">
+              <div class="card-body">
+                <h5 class="card-title">${nomeProduto}</h5>
+                <p class="card-text">Preço: R$ ${valorProduto.toFixed(2)}</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          `;
+          $('#catalogo').append(cardHtml);
           $('#nomeProduto').val('');
           $('#valorProduto').val('');
+          $('#imagemProduto').val('');
         } else {
-          alert('Por favor, insira um nome e um valor válido para o produto.');
+          alert('Por favor, insira um nome, valor e caminho da imagem válidos para o produto.');
         }
       },
       carregarProdutos: function() {
-        produtos.forEach(produto => {
-          $('#catalogo').append(`<p>${produto}</p>`);
-        });
+        // Aqui você pode carregar produtos de um array ou de uma fonte externa
       }
     };
     app.init();
