@@ -54,7 +54,7 @@ $(document).ready(function() {
               <div class="card-body">
                 <h5 class="card-title">${nomeProduto}</h5>
                 <p class="card-text">Preço: R$ ${valorProduto.toFixed(2)}</p>
-                <a href="#" class="btn btn-primary">Comprar</a>
+                <a href="#" class="btn btn-success">Comprar</a>
               </div>
             </div>
           `;
