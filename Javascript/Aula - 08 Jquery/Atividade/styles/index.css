@@ -1,0 +1,27 @@
+body {
+    background-color: #fafafa; /* Um cinza muito claro */
+    color: #333333; /* Um cinza escuro para o texto, que é mais suave do que o preto puro */
+    transition: 0.3s; /* Uma transição mais rápida pode ser mais agradável */
+}
+
+.dark-theme {
+    background-color: #121212; /* Um cinza quase preto, recomendado para temas escuros */
+    color: #e0e0e0; /* Um cinza claro para o texto, para um contraste confortável */
+    transition: 0.3s;
+}
+
+button {
+    border: 1px solid gray;
+}
+
+#trocaTemaClaro {
+    display: none; /* Esconde o botão do tema claro por padrão */
+}
+
+.dark-theme #trocaTemaClaro {
+    display: block; /* Mostra o botão do tema claro quando o tema escuro está ativo */
+}
+
+.dark-theme #trocaTemaDark {
+    display: none; /* Esconde o botão do tema escuro quando o tema escuro está ativo */
+}
