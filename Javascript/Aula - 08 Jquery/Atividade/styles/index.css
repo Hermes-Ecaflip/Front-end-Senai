@@ -23,3 +23,8 @@ body {
 .dark-theme #trocaTemaDark {
     display: none; /* Esconde o botão do tema escuro quando o tema escuro está ativo */
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+    
+}
