@@ -12,6 +12,7 @@ body {
 
 button {
     border: 1px solid gray;
+    background-color: transparent;
 }
 
 #trocaTemaClaro {

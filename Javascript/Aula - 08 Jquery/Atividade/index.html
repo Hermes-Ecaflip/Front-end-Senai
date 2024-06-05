@@ -33,7 +33,7 @@
       </nav>
   </header>
 
-  <main class="container">
+  <main class="container d-flex flex-column justify-content-center align-items-center">
     <!-- Catálogo de Produtos -->
     <section id="catalogo-produtos">
       <h1>Catálogo de Produtos</h1>
@@ -46,6 +46,14 @@
       <input type="number" id="quantidade" placeholder="Quantidade">
       <button id="calcular">Calcular Preço</button>
       <p>Preço Total: <span id="precoTotal"></span></p>
+    </section>
+    
+    <!-- Formulário para adicionar produtos -->
+    <section id="adicionar-produtos">
+      <h2>Adicionar Produto</h2>
+      <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+      <input type="number" id="valorProduto" placeholder="Valor">
+      <button id="adicionar">Adicionar Produto</button>
     </section>
     
   </main> 

@@ -10,6 +10,7 @@ $(document).ready(function() {
         $('#calcular').on('click', this.calcularPrecoTotal.bind(this));
         $('#trocaTemaDark').on('click', this.aplicarTemaEscuro.bind(this));
         $('#trocaTemaClaro').on('click', this.aplicarTemaClaro.bind(this));
+        $('#adicionar').on('click', this.adicionarProduto.bind(this));
       },
       calcularPrecoTotal: function() {
         let quantidade = parseInt($('#quantidade').val());
@@ -39,8 +40,19 @@ $(document).ready(function() {
           $('#trocaTemaDark').show();
         }
       },
+      adicionarProduto: function() {
+        let nomeProduto = $('#nomeProduto').val();
+        let valorProduto = parseFloat($('#valorProduto').val());
+        
+        if (nomeProduto && !isNaN(valorProduto) && valorProduto > 0) {
+          $('#catalogo').append(`<p>${nomeProduto} - R$ ${valorProduto.toFixed(2)}</p>`);
+          $('#nomeProduto').val('');
+          $('#valorProduto').val('');
+        } else {
+          alert('Por favor, insira um nome e um valor válido para o produto.');
+        }
+      },
       carregarProdutos: function() {
-        let produtos = ['Pacote 1', 'Pacote 2', 'Pacote 3']; // Exemplo de produtos
         produtos.forEach(produto => {
           $('#catalogo').append(`<p>${produto}</p>`);
         });
