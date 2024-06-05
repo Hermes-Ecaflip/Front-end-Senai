@@ -12,8 +12,6 @@ body {
     transition: 0.3s;
 }
 
-
-
 #trocaTemaClaro {
     display: none; /* Esconde o botão do tema claro por padrão */
 }
