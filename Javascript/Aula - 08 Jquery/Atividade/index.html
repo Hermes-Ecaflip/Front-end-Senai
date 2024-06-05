@@ -10,54 +10,58 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fa-brands fa-discord"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-            </ul>
-            <!-- Troca de Tema -->
-            <section id="troca-tema">
-              <button id="trocaTemaDark" class="btn"><i class="fa-solid fa-moon"></i></button>
-              <button id="trocaTemaClaro" class="btn"><i class="fa-regular fa-sun"></i></button>
-            </section>
-          </div>
-        </div>
-      </nav>
-  </header>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                            Home
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Troca de Tema -->
+                    <section id="troca-tema">
+                        <button id="trocaTemaDark" class="btn"><i class="fa-solid fa-moon"></i></button>
+                        <button id="trocaTemaClaro" class="btn"><i class="fa-regular fa-sun"></i></button>
+                    </section>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <main class="container d-flex flex-column justify-content-center align-items-center">
-    <!-- Catálogo de Produtos -->
-    <section id="catalogo-produtos" class="row">
-      <h1>Catálogo de Produtos</h1>
-      <div id="catalogo" class="col-md-4 d-flex"></div>
-    </section>
-    
-    <!-- Calculadora de Preços -->
-    <section id="calculadora-precos">
-      <h2>Calculadora de Preços</h2>
-      <input type="number" id="quantidade" class="form-control" placeholder="Quantidade">
-      <button type="button" class="btn btn-primary mt-2" id="calcular">Calcular Preço</button>
-      <p>Preço Total: <span id="precoTotal"></span></p>
-    </section>
-    
-    <!-- Formulário para adicionar produtos -->
-    <section id="adicionar-produtos">
-      <h2>Adicionar Produto</h2>
-      <input type="text" id="nomeProduto" class="form-control mb-2" placeholder="Nome do Produto">
-      <input type="number" id="valorProduto" class="form-control mb-2" placeholder="Valor">
-      <input type="text" id="imagemProduto" class="form-control mb-2" placeholder="Caminho da Imagem">
-      <button type="button" class="btn btn-primary mt-2" id="adicionar">Adicionar Produto</button>
-    </section>
-    
-  </main> 
+    <main class="container d-flex flex-column justify-content-center align-items-center">
+        <!-- Catálogo de Produtos -->
+        <section id="catalogo-produtos" class="row">
+            <h1>Catálogo de Produtos</h1>
+            <div id="catalogo" class="col-md-4 d-flex"></div>
+        </section>
+        
+        <!-- Calculadora de Preços -->
+        <section id="calculadora-precos">
+            <h2>Calculadora de Preços</h2>
+            <input type="number" id="quantidade" class="form-control" placeholder="Quantidade">
+            <button type="button" class="btn btn-primary mt-2" id="calcular">Calcular Preço</button>
+            <p>Preço Total: <span id="precoTotal"></span></p>
+        </section>
+        
+        <!-- Formulário para adicionar produtos -->
+        <section id="adicionar-produtos">
+            <h2>Adicionar Produto</h2>
+            <input type="text" id="nomeProduto" class="form-control mb-2" placeholder="Nome do Produto">
+            <input type="number" id="valorProduto" class="form-control mb-2" placeholder="Valor">
+            <input type="text" id="imagemProduto" class="form-control mb-2" placeholder="Caminho da Imagem">
+            <button type="button" class="btn btn-primary mt-2" id="adicionar">Adicionar Produto</button>
+        </section>
+        
+    </main> 
 
   <!-- Scripts -->
   <script src="https://kit.fontawesome.com/13033c9605.js" crossorigin="anonymous"></script>
