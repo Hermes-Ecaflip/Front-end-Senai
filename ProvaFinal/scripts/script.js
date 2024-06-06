@@ -31,6 +31,16 @@ $(document).ready(function() {
     // Função para alternar entre temas claro e escuro
     $('#themeToggle').click(function() {
       $('body').toggleClass('light-theme dark-theme');
+      // Alternar os ícones do sol e da lua
+      $('.fa-moon, .fa-sun').toggleClass('d-none');
     });
+  
+    // Inicializa os ícones corretos de acordo com o tema atual
+    if ($('body').hasClass('dark-theme')) {
+      $('.fa-moon').addClass('d-none'); // Esconde o ícone da lua
+    } else {
+      $('.fa-sun').addClass('d-none'); // Esconde o ícone do sol
+    }
   });
+  
   
