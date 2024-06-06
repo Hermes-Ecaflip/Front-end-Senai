@@ -26,4 +26,11 @@ $(document).ready(function() {
       }, 2000);
     }
   });
+
+  $(document).ready(function() {
+    // Função para alternar entre temas claro e escuro
+    $('#themeToggle').click(function() {
+      $('body').toggleClass('light-theme dark-theme');
+    });
+  });
   

@@ -1,0 +1,14 @@
+/* Estilos para o tema claro */
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+    /* ... outros estilos para o tema claro ... */
+  }
+  
+  /* Estilos para o tema escuro */
+  .dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+    /* ... outros estilos para o tema escuro ... */
+  }
+  
