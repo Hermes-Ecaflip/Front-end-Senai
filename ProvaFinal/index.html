@@ -19,10 +19,12 @@
         <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid p-3">
               <a class="navbar-brand ms-3" href="#"><img src="Img/LOGO OFICIAL.png" alt="LOGO" style="height: 90px;"></a>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2 border border-top-0 border-start-0 border-end-0" type="search" placeholder="Procurar" aria-label="Search">
-                <button class="border border-0 btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-              </form>
+              <div class="d-none d-lg-block">
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2 border border-top-0 border-start-0 border-end-0" type="search" placeholder="Procurar" aria-label="Search">
+                  <button class="border border-0 btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                </form> 
+              </div>                      
               <button class="navbar-toggler p-3 border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-bars fa-xl"></i></span>
               </button>
@@ -33,7 +35,7 @@
                 </div>
                 <div class="offcanvas-body">
                   <div class="d-flex flex-column align-items-center mb-3">
-                    <a href="#" class="btn btn-lg mb-2 p-3" role="button"><i class="fa-regular fa-circle-user fa-2xl"></i>Logar/Cadastrar</a>
+                    <a href="#" class="btn btn-lg mb-2 p-3" role="button"><i class="fa-regular fa-circle-user fa-2xl me-2"></i>Logar/Cadastrar</a>
                   </div>    
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
@@ -77,6 +79,10 @@
                     </ol>                    
                     </li>
                   </ul>
+                  <form class="d-flex mt-3 d-block d-sm-none" role="search">
+                    <input class="form-control me-2 border border-top-0 border-start-0 border-end-0" type="search" placeholder="Procurar" aria-label="Search">
+                    <button class="border border-0 btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                  </form>
                 </div>
               </div>
             </div>
