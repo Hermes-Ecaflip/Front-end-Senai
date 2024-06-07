@@ -86,10 +86,12 @@
                     </ol>                    
                     </li>
                   </ul>
-                  <form class="d-flex mt-3 d-block d-sm-none" role="search">
-                    <input class="form-control me-2 border border-top-0 border-start-0 border-end-0" type="search" placeholder="Procurar" aria-label="Search">
-                    <button class="border border-0 btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-                  </form>
+                  <div class="d-block d-lg-none">
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2 border border-top-0 border-start-0 border-end-0" type="search" placeholder="Procurar" aria-label="Search">
+                      <button class="border border-0 btn" type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,7 +99,30 @@
     </header>
 
     <main>
-        
+      <!-- Carrossel de Filmes em lançamento -->
+      <section id="filmesLancamento">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <picture>
+                <source srcset="Img/Badboys.svg" media="(min-width: 992px)"> <!-- Imagem para telas lg e maiores -->
+                <img src="Img/Badboys (700 x 1000 px).svg" class="d-block w-100" alt="Badboys"> <!-- Imagem padrão -->
+              </picture>
+              <div class="carousel-caption border-0 d-none d-xl-block rounded">
+                <h5 class="mt-5">Bad Boys IV For Life</h5>
+                <p>Descrição breve do filme.</p>
+                <div class="container">
+                  <a href="#" class="btn btn-primary me-3">Ingressos</a>
+                  <a href="#" class="btn btn-primary">Ver Trailer</a>
+                </div>
+              </div>
+            </div>
+            <!-- Repita para outros itens do carrossel -->
+          </div>
+          <!-- Controles do carrossel -->
+        </div>
+      </section>        
+
     </main>
 
     <footer>

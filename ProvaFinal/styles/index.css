@@ -1,14 +1,58 @@
+/* Adicionando a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Restante do seu CSS... */
+
+
 /* Estilos para o tema claro */
 .light-theme {
-    background-color: #ffffff;
-    color: #000000;
-    /* ... outros estilos para o tema claro ... */
+  background-color: #FFFFFF; /* Branco Completo */
+  color: #2C2F33; /* Cinza Escuro */
+  /* ... outros estilos para o tema claro ... */
+}
+
+/* Estilos para o tema escuro */
+.dark-theme {
+  background-color: #23272A; /* Preto Quase */
+  color: #FFFFFF; /* Branco Completo */
+  /* ... outros estilos para o tema escuro ... */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%; /* Posiciona no meio verticalmente */
+  left: 5%; /* Posiciona à esquerda com uma margem */
+  transform: translateY(-50%); /* Ajusta a posição vertical para o centro exato */
+  z-index: 10;
+  color: #fff;
+  text-align: center; /* Alinha o texto à esquerda */
+  background: rgba(0, 0, 0, 0.5); /* Adiciona um fundo escuro para melhorar a legibilidade */
+  width: 20%;
+
+  a {
+    margin-top: 10%;
   }
-  
-  /* Estilos para o tema escuro */
-  .dark-theme {
-    background-color: #000000;
-    color: #ffffff;
-    /* ... outros estilos para o tema escuro ... */
+}
+
+/* Media query para ajustes específicos de telas pequenas */
+@media (max-width: 767px) {
+  .carousel-caption {
+    left: 10%; /* Ajusta a margem esquerda para telas menores */
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte para telas pequenas */
   }
-  
+  .carousel-caption h5 {
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte do título para telas pequenas */
+  }
+  .carousel-caption p {
+    font-size: 1rem; /* Ajusta o tamanho da fonte do parágrafo para telas pequenas */
+  }
+}
+
+
+
+
+
