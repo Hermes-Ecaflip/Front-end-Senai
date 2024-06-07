@@ -44,6 +44,14 @@ body {
   }
 }
 
+.card {
+  background-color: transparent;
+  border: none;
+
+  img {
+    width: 300px;
+  }
+}
 /* Media query para ajustes específicos de telas pequenas */
 @media (max-width: 767px) {
   .carousel-caption {
@@ -61,7 +69,6 @@ body {
 ::-webkit-scrollbar {
   width: 0;
 }
-
 
 
 
