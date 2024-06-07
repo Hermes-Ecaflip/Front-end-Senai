@@ -101,29 +101,62 @@
     <main>
       <!-- Carrossel de Filmes em lançamento -->
       <section id="filmesLancamento">
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <picture>
-                <source srcset="Img/Badboys.svg" media="(min-width: 992px)"> <!-- Imagem para telas lg e maiores -->
-                <img src="Img/Badboys (700 x 1000 px).svg" class="d-block w-100" alt="Badboys"> <!-- Imagem padrão -->
-              </picture>
-              <div class="carousel-caption border-0 d-none d-xl-block rounded">
-                <h5 class="mt-5">Bad Boys IV For Life</h5>
-                <p>Descrição breve do filme.</p>
-                <div class="container">
-                  <a href="#" class="btn btn-primary me-3">Ingressos</a>
-                  <a href="#" class="btn btn-primary">Ver Trailer</a>
-                </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indicadores do carrossel -->
+              <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-            </div>
-            <!-- Repita para outros itens do carrossel -->
-          </div>
-          <!-- Controles do carrossel -->
-        </div>
-      </section>        
 
-    </main>
+              <!-- Conteúdo do carrossel -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <picture>
+                          <source srcset="Img/Badboys.png" media="(min-width: 992px)"> <!-- Imagem para telas lg e maiores -->
+                          <img src="Img/Badboys (700 x 1000 px).svg" class="d-block w-100" alt="Badboys"> <!-- Imagem padrão -->
+                      </picture>
+                      <div class="carousel-caption border-0 d-none d-xl-block rounded">
+                          <strong><h5 class="mt-3">Bad Boys IV For Life</h5></strong>
+                          <p class="m-3">"Bad Boys IV For Life" traz ação e comédia em uma trama eletrizante onde a lealdade e a amizade são postas à prova. Mike e Marcus se unem mais uma vez para combater o crime em Miami, garantindo uma dose extra de adrenalina e risadas.</p>
+                          <div class="container">
+                              <a href="#" class="btn btn-outline-light me-5">Ingressos</a>
+                              <a href="#" class="btn btn-outline-light">Ver Trailer</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Deadpool 3 -->
+                  <div class="carousel-item">
+                    <picture>
+                        <source srcset="img/Deadpool.png" media="(min-width: 992px)"> <!-- Imagem para telas lg e maiores -->
+                        <img src="Img/DeadPool (700 x 1000 px).svg" class="d-block w-100" alt="DeadPool"> <!-- Imagem padrão -->
+                    </picture>
+                    <div class="carousel-caption border-0 d-none d-xl-block rounded">
+                        <strong><h5 class="mt-3">Deadpool & Wolverine</h5></strong>
+                        <p class="m-3">“Deadpool & Wolverine” une a irreverência de Deadpool com a intensidade de Wolverine em uma aventura repleta de ação e humor afiado, onde os dois anti-heróis enfrentam desafios inesperados.</p>
+                        <div class="container">
+                            <a href="#" class="btn btn-outline-light me-5">Ingressos</a>
+                            <a href="#" class="btn btn-outline-light">Ver Trailer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <picture>
+                      <source srcset="img/garfield.png" media="(min-width: 992px)"> <!-- Imagem para telas lg e maiores -->
+                      <img src="Img/garfield(700 x 1000 px).svg" class="d-block w-100" alt="garfield"> <!-- Imagem padrão -->
+                  </picture>
+                  <div class="carousel-caption border-0 d-none d-xl-block rounded">
+                      <strong><h5 class="mt-3">Garfield - Fora de casa</h5></strong>
+                      <p class="m-3">“Garfield - Fora de Casa” é uma animação onde o famoso gato Garfield vive aventuras e descobre a importância de amigos e família. Com humor e apetite, ele encara desafios em uma trama envolvente.</p>
+                      <div class="container">
+                          <a href="#" class="btn btn-outline-light me-5">Ingressos</a>
+                          <a href="#" class="btn btn-outline-light">Ver Trailer</a>
+                      </div>
+                  </div>
+              </div>                     
+              </div>
+      </section>
+  </main>
 
     <footer>
         <!-- Rodapé aqui -->
