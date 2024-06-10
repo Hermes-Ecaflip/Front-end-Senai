@@ -164,23 +164,23 @@
       <!-- Filmes -->
       <section id="filmes" class="container mt-5 w-100">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3">
             <div class="card">
-              <a href="URL-DESTINO-1">
+              <a>
                 <img src="https://image.tmdb.org/t/p/w342/rC5RqXtFoTkBhNWE1dczwi4dZrX.jpg" class="card-img-top" alt="Descrição do Filme 1">
               </a>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3">
             <div class="card">
-              <a href="URL-DESTINO-2">
+              <a>
                 <img src="https://image.tmdb.org/t/p/w342/xNSsIyZcbESWBm42VTo09zbjS6s.jpg"  class="card-img-top img-fluid" alt="Descrição do Filme 2">
               </a>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3">
             <div class="card">
-              <a href="URL-DESTINO-3">
+              <a>
                 <img src="https://image.tmdb.org/t/p/w342/aNK6MA5EApIo0UJE7ZWSYcZBJKy.jpg" class="card-img-top img-fluid" alt="Descrição do Filme 3">
               </a>
             </div>
@@ -190,35 +190,58 @@
     
       <section id="filmes2" class="container mt-5">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3">
             <div class="card">
-              <a href="URL-DESTINO-1">
+              <a>
                 <img src="https://image.tmdb.org/t/p/w342/dzDK2TMXsxrolGVdZwNGcOlZqrF.jpg" class="card-img-top img-fluid" alt="Descrição do Filme 1">
               </a>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3">
             <div class="card">
-              <a href="URL-DESTINO-2">
+              <a>
                 <img src="https://image.tmdb.org/t/p/w342/rnbfSEC3h7WbE2yVifKKPrzLUJ9.jpg" class="card-img-top img-fluid" alt="Descrição do Filme 2">
               </a>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mt-3">
             <div class="card">
-              <a href="URL-DESTINO-3">
+              <a>
                 <img src="https://image.tmdb.org/t/p/w342/c5wn2eLRN3naOB1JxEbDIApRN2T.jpg" class="card-img-top img-fluid" alt="Descrição do Filme 3">
               </a>
             </div>
           </div>
         </div>
       </section>
-    <div class="border-top"></div>
+    <div class="border-top mt-3"></div>
   </main>
 
-    <footer>
-        <!-- Rodapé aqui -->
+    <footer class="d-flex justify-content-center mt-3">
+        <h5>Direitos reservados EYZE OVER</h5>
     </footer>
+
+    <!-- Modal para seleção de assentos -->
+    <div id="modalSelecaoAssentos" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Selecione seu(s) assento(s)</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="assentosCinema" class="d-flex flex-column align-items-center">
+              <!-- Assentos serão gerados aqui pelo JavaScript -->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div id="total" class="text-center">Total: R$0.00</div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <a href=""><button type="button" class="btn btn-primary">Confirmar Seleção</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/13033c9605.js" crossorigin="anonymous"></script>
