@@ -50,6 +50,8 @@ $(document).ready(function() {
   updateThemeIcons(); // Atualiza os ícones ao carregar a página
 });
 
+
+// Modal Assentos
 $(document).ready(function() {
   // Adiciona evento de clique para cada filme
   $('#filmes .card a, #filmes2 .card a').click(function(event) {
