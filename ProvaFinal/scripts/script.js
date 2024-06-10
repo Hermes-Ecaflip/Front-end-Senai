@@ -48,19 +48,14 @@ $(document).ready(function() {
     $('body').addClass('light-theme').removeClass('dark-theme');
   }
   updateThemeIcons(); // Atualiza os ícones ao carregar a página
-});
 
-
-// Modal Assentos
-$(document).ready(function() {
+  // Modal Assentos
   // Adiciona evento de clique para cada filme
   $('#filmes .card a, #filmes2 .card a').click(function(event) {
     event.preventDefault(); // Previne a ação padrão do link
     $('#modalSelecaoAssentos').modal('show'); // Abre o modal
   });
-});
 
-$(document).ready(function() {
   // Função para gerar poltronas
   function gerarPoltronas() {
     const assentosCinema = $('#assentosCinema');
@@ -71,7 +66,6 @@ $(document).ready(function() {
       const fileira = $('<div>').addClass('d-flex justify-content-center mb-2');
       for (let j = 0; j < 6; j++) { // 6 poltronas por fileira
         const poltrona = $('<button>').addClass('btn border me-1 poltrona');
-        // Adiciona o ícone e o número em linhas separadas
         poltrona.html(`<i class="fa-solid fa-couch fa-xl"></i><span class="poltrona-numero">${i * 6 + j + 1}</span>`);
         poltrona.on('click', function() {
           $(this).toggleClass('btn-success'); // Muda a cor para verde
@@ -98,4 +92,17 @@ $(document).ready(function() {
   $('#modalSelecaoAssentos').on('hidden.bs.modal', function() {
     $('#total').text('Total: R$0.00');
   });
+
+  // Quando o usuário confirma a seleção de assentos
+  $('#confirmarSelecao').click(function() {
+    // Armazena as poltronas selecionadas no localStorage
+    var poltronasSelecionadas = [];
+    $('.poltrona.btn-success').each(function() {
+      poltronasSelecionadas.push($(this).find('.poltrona-numero').text());
+    });
+    localStorage.setItem('poltronasSelecionadas', JSON.stringify(poltronasSelecionadas));
+    // Redireciona para a página do carrinho
+    window.location.href = 'carrinho.html';
+  });
 });
+

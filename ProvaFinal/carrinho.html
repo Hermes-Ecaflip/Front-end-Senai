@@ -12,29 +12,63 @@
           rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
 </head>
 <body>
     <header>
         <header>
             <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
-                <div class="container-fluid justify-content-center p-3">
+                <div class="container-fluid p-3 justify-content-center">
                   <a class="navbar-brand ms-3" href="index.html"><img src="Img/LOGO OFICIAL.png" alt="LOGO" style="height: 90px;"></a>
-                  <div class="d-none d-lg-block">
-                  </div>       
-                </div>
+                  <div class="d-flex gap-5 justify-content-end">                  
+                    <button id="themeToggle" class="border border-0 btn">
+                      <i class="fa-solid fa-moon fa-xl"></i> <!-- Ícone da lua -->
+                      <i class="fa-solid fa-sun fa-xl"></i> <!-- Ícone do sol -->
+                    </button>
+                    </div>  
+                </div>    
             </nav>
         </header>
     </header>
 
     <main>
-     
+       <!-- Adicione este trecho onde você deseja exibir as poltronas selecionadas -->
+        <section id="carrinho">
+            <div class="card w-100">
+            <div class="card-body">
+                <!-- As poltronas selecionadas serão adicionadas aqui pelo JavaScript -->
+            </div>
+            </div>
+        </section>
+  
+  
+
+        <!-- cupons -->
+        <section id="cupom">
+            <div class="cupom">
+                <input type="text">
+                <button type="button">aplicar cupom</button>
+            </div>
+        </section>
+
+        <!-- metodos de pagamentos com checkbox-->
+        <section id="metodospagamento">
+            paypal
+            pix
+            cartão de credito/debito 
+            boleto bancario
+        </section>
+
+        <a href=""><button type="submit">Finalizar Compra</button></a>
+        
+        
+    </main>
 
     
 
 
     <!-- Scripts -->
-    <script src="scripts/checkout.js"></script>
+    <script src="scripts/carrinho.js"></script>
     <script src="https://kit.fontawesome.com/13033c9605.js" crossorigin="anonymous"></script>
     <script src="scripts/Jquery.js"></script>
     <script src="scripts/script.js"></script>
