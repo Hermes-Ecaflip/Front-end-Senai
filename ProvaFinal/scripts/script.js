@@ -1,9 +1,8 @@
 $(document).ready(function() {
-  // Sequência do Código Konami como string
+  // Código Konami
   var konamiCode = '38384040373937396665';
   var inputSequence = '';
 
-  // Detecta a sequência de teclas do Código Konami
   $(document).keydown(function(e) {
     inputSequence += e.keyCode.toString();
     if (inputSequence === konamiCode) {
@@ -14,7 +13,6 @@ $(document).ready(function() {
     }
   });
 
-  // Função para girar o logo
   function executeLogoSpin() {
     $('img[alt="LOGO"]').css({ 'transition': 'transform 2s', 'transform': 'rotate(360deg)' });
     setTimeout(function() {
@@ -22,15 +20,14 @@ $(document).ready(function() {
     }, 2000);
   }
 
-  // Função para alternar entre temas claro e escuro
+  // Alternância de tema claro e escuro
   $('#themeToggle').click(function() {
     $('body').toggleClass('light-theme dark-theme');
     var theme = $('body').hasClass('dark-theme') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme); // Salva a preferência do tema
+    localStorage.setItem('theme', theme);
     updateThemeIcons();
   });
 
-  // Atualiza os ícones de acordo com o tema
   function updateThemeIcons() {
     if ($('body').hasClass('dark-theme')) {
       $('.fa-moon').addClass('d-none');
@@ -41,19 +38,18 @@ $(document).ready(function() {
     }
   }
 
-  // Inicializa o tema com base na preferência salva
   if (localStorage.getItem('theme') === 'dark') {
     $('body').addClass('dark-theme').removeClass('light-theme');
   } else {
     $('body').addClass('light-theme').removeClass('dark-theme');
   }
-  updateThemeIcons(); // Atualiza os ícones ao carregar a página
+  updateThemeIcons();
 
-  // Modal Assentos
-  // Adiciona evento de clique para cada filme
+  // Modal de seleção de assentos
   $('#filmes .card a, #filmes2 .card a').click(function(event) {
     event.preventDefault(); // Previne a ação padrão do link
     $('#modalSelecaoAssentos').modal('show'); // Abre o modal
+    gerarPoltronas();
   });
 
   // Função para gerar poltronas
@@ -105,4 +101,3 @@ $(document).ready(function() {
     window.location.href = 'carrinho.html';
   });
 });
-
