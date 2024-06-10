@@ -65,7 +65,7 @@ body {
   color: #2C2F33;
 }
 
-/* Adicione este CSS para estilizar o modal */
+/* MODAL */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
