@@ -18,55 +18,27 @@ body {
   box-sizing: border-box;
 }
 
-/* Estilos para o cabeçalho */
 header {
   background-color: #1c1c1c;
   border-bottom: 3px solid var(--cor-primaria);
 }
 
-/* Estilos para o tema claro */
 .light-theme {
   background-color: #FFFFFF; /* Branco Completo */
   color: #2C2F33; /* Cinza Escuro */
 }
 
-/* Toggle entre temas claro e escuro */
 .theme-toggle {
   cursor: pointer;
 }
 
-/* Estilos para o tema escuro */
 .dark-theme {
   background-color: #23272A; /* Preto Quase */
   color: var(--cor-texto);
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  z-index: 10;
-  color: var(--cor-texto);
-  text-align: center;
-  background: rgba(0, 0, 0, 0.5);
-  width: 25%;
-  height: 60%;
-}
-
-.carousel-caption a {
-  margin-top: 7%;
-  color: var(--cor-primaria);
-  text-decoration: none;
-}
-
-.carousel-caption a:hover,
-.carousel-caption a:focus {
-  color: var(--cor-secundaria);
-}
-
-.carousel-caption h5 {
-  font-size: x-large;
+.card-title{
+    color: rgb(0, 247, 0);
 }
 
 .card {
@@ -128,6 +100,10 @@ a:hover {
   cursor: pointer;
 }
 
+.card-text {
+    color: var(--cor-secundaria);
+}
+
 @media (max-width: 767px) {
   .carousel-caption {
     left: 10%;
@@ -144,7 +120,6 @@ a:hover {
   }
 }
 
-/* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -160,4 +135,47 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--cor-secundaria);
+}
+
+/* Estilos adicionais para os horários dos filmes */
+.filme-horarios {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.filme-horarios ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.filme-horarios li {
+    background-color: var(--cor-secundaria); /* Cor de fundo para cada item da lista */
+    color: var(--cor-texto); /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 5px; /* Espaço entre os itens da lista */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Texto centralizado */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+    list-style: none;
+  }
+  
+  .filme-horarios li:hover {
+    background-color: var(--cor-primaria); /* Cor de fundo ao passar o mouse */
+    color: #FFFFFF; /* Cor do texto ao passar o mouse */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+  }
+
+  .filme-horarios a {
+  color: var(--cor-texto); /* Define a cor do texto para a cor primária */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.filme-horarios a:hover {
+  color: var(--cor-secundaria); /* Cor do texto ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse, opcional */
+}
+
+li {
+    color: var(--cor-primaria);
+    
 }
